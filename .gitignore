@@ -1,0 +1,10 @@
+# GitHub rejects files over 100 MB: demo videos go on a GitHub Release instead
+*.mp4
+*.mkv
+*.webm
+# Python / ROS build junk
+__pycache__/
+*.pyc
+build/
+install/
+log/
