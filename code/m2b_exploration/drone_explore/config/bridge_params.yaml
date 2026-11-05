@@ -1,0 +1,20 @@
+# cmd_vel_bridge. Topic names checked against PX4 v1.17 (same as the M1 waypoint node).
+# Verify with:  ros2 topic list | grep fmu
+cmd_vel_bridge:
+  ros__parameters:
+    use_sim_time: true
+    altitude: 1.5
+    rate_hz: 20.0
+    max_xy_speed: 0.6
+    max_yaw_rate: 0.8
+    cmd_timeout: 0.5
+    target_timeout: 2.0
+    max_target_step: 0.6
+    auto_takeoff: true
+    cmd_vel_stamped: false
+    base_frame: base_link
+    topic_offboard_mode: /fmu/in/offboard_control_mode
+    topic_setpoint: /fmu/in/trajectory_setpoint
+    topic_command: /fmu/in/vehicle_command
+    topic_status: /fmu/out/vehicle_status_v1
+    topic_local_position: /fmu/out/vehicle_local_position_v1

@@ -1,0 +1,149 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+    Property Tree Widget:
+      Expanded: ~
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 24
+      Reference Frame: <Fixed Frame>
+      Color: 160; 160; 164
+      Alpha: 0.3
+      Value: true
+    - Class: rviz_default_plugins/Map
+      Name: 2D SLAM map
+      Enabled: true
+      Topic:
+        Value: /map
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Color Scheme: map
+      Alpha: 0.6
+      Draw Behind: true
+      Value: true
+    - Class: rviz_default_plugins/PointCloud2
+      Name: 3D map (height colour)
+      Enabled: true
+      Topic:
+        Value: /map_3d
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Color Transformer: RGB8
+      Style: Boxes
+      Size (m): 0.1
+      Alpha: 1
+      Decay Time: 0
+      Position Transformer: XYZ
+      Selectable: false
+      Value: true
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Live 3D LiDAR
+      Enabled: false
+      Topic:
+        Value: /lidar_3d/points
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+      Color Transformer: FlatColor
+      Color: 255; 255; 255
+      Style: Flat Squares
+      Size (m): 0.03
+      Alpha: 1
+      Decay Time: 0
+      Position Transformer: XYZ
+      Value: false
+    - Class: rviz_default_plugins/LaserScan
+      Name: 2D scan
+      Enabled: true
+      Topic:
+        Value: /scan
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+      Color Transformer: FlatColor
+      Color: 255; 255; 255
+      Style: Flat Squares
+      Size (m): 0.05
+      Alpha: 1
+      Decay Time: 0
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Victim pins
+      Enabled: true
+      Topic:
+        Value: /victims/markers
+        Depth: 5
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Namespaces: ~
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Victim candidates (tuning)
+      Enabled: false
+      Topic:
+        Value: /victims/candidates
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Namespaces: ~
+      Value: false
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Show Arrows: false
+      Show Axes: true
+      Show Names: false
+      Marker Scale: 0.6
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 30; 30; 36
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Name: Current View
+      Target Frame: <Fixed Frame>
+      Distance: 30
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Pitch: 0.9
+      Yaw: 4.2
+      Field of View: 0.785
+      Near Clip Distance: 0.01
+      Value: Orbit (rviz)
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 900
+  Width: 1500
+  Hide Left Dock: false
+  Hide Right Dock: true

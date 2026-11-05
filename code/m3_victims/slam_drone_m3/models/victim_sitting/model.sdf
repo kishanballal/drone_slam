@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- Seated / slumped victim, about 0.9 m tall, facing +x. Origin on the floor.
+     Kept below 1.2 m so the drone flying at 1.5 m can pass over it safely. -->
+<sdf version="1.9">
+  <model name="victim_sitting">
+    <static>true</static>
+    <link name="body">
+      <collision name="legs_col"><pose>0.22 0 0.08 0 0 0</pose><geometry><box><size>0.45 0.36 0.16</size></box></geometry></collision>
+      <visual name="legs_vis"><pose>0.22 0 0.08 0 0 0</pose><geometry><box><size>0.45 0.36 0.16</size></box></geometry><material><ambient>1 0.45 0 1</ambient><diffuse>1 0.45 0 1</diffuse></material></visual>
+      <collision name="torso_col"><pose>-0.10 0 0.41 0 0 0</pose><geometry><box><size>0.26 0.38 0.50</size></box></geometry></collision>
+      <visual name="torso_vis"><pose>-0.10 0 0.41 0 0 0</pose><geometry><box><size>0.26 0.38 0.50</size></box></geometry><material><ambient>1 0.45 0 1</ambient><diffuse>1 0.45 0 1</diffuse></material></visual>
+      <collision name="head_col"><pose>-0.08 0 0.79 0 0 0</pose><geometry><sphere><radius>0.11</radius></sphere></geometry></collision>
+      <visual name="head_vis"><pose>-0.08 0 0.79 0 0 0</pose><geometry><sphere><radius>0.11</radius></sphere></geometry><material><ambient>0.85 0.65 0.5 1</ambient><diffuse>0.85 0.65 0.5 1</diffuse></material></visual>
+    </link>
+  </model>
+</sdf>
