@@ -1,0 +1,14 @@
+# Moving obstacles for the replanning demo (positions in Gazebo world ENU metres).
+# walker_1 paces along the north corridor (y = 6.2), walker_2 along the east side (x = 8.8, y 3 -> 6.5).
+# If a walker clips a wall in Gazebo, change its spawn x/y in obstacles.launch.py
+# or shorten its length here.
+obstacle_mover:
+  ros__parameters:
+    use_sim_time: true
+    names: ['walker_1', 'walker_2']
+    axes: ['x', 'y']
+    lengths: [6.5, 3.5]        # walker_1: x -5.5 -> 1.0 (clear of pillar_w and the crate at x=3)
+    speeds: [0.4, 0.3]
+    pause: 1.0
+    start_delay: 0.0
+    stop_dist: 1.4             # walker waits while the drone is this close ahead of it

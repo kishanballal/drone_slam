@@ -1,0 +1,13 @@
+# rf2o laser odometry, Milestone 2a.
+# rf2o only measures; laser_odom_to_px4 filters glitches and publishes /odom + TF
+# odom -> base_link (the M1 odom_tf node must be off).
+/**:   # any node name (rf2o names itself CLaserOdometry2DNode under ros2 run)
+  ros__parameters:
+    laser_scan_topic: /scan
+    odom_topic: /odom_raw      # laser_odom_to_px4 republishes it de-glitched as /odom
+    publish_tf: false          # laser_odom_to_px4 publishes odom -> base_link
+    base_frame_id: base_link
+    odom_frame_id: odom
+    init_pose_from_topic: ""   # empty = start at (0,0,0) right away
+    freq: 20.0
+    use_sim_time: true

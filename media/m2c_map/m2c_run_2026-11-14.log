@@ -1,0 +1,1459 @@
+[INFO] [launch]: All log files can be found below /home/kisha/.ros/log/2026-11-14-14-46-39-241880-HpHyperXomen-1186
+[INFO] [launch]: Default logging verbosity is set to INFO
+/opt/ros/jazzy/lib/python3.12/site-packages/launch/conditions/launch_configuration_equals.py:53: UserWarning: The 'LaunchConfigurationEquals' and 'LaunchConfigurationNotEquals' Conditions are  deprecated. Use the 'EqualsSubstitution' and 'NotEqualsSubstitution' substitutions instead! E.g.:
+  IfCondition(
+  	EqualsSubstitution(LaunchConfiguration('some_launch_arg'), "some_equality_check")
+  )
+  warnings.warn(
+[INFO] [launch.user]: 2D scan: /world/building/model/x500_lidar_3d_ev_0/link/link/sensor/lidar_2d_v2/scan  frame: link
+[INFO] [launch.user]: 3D cloud frame: lidar_3d_link
+[INFO] [MicroXRCEAgent-1]: process started with pid [1235]
+[INFO] [parameter_bridge-2]: process started with pid [1236]
+[INFO] [static_transform_publisher-3]: process started with pid [1237]
+[INFO] [static_transform_publisher-4]: process started with pid [1238]
+[INFO] [async_slam_toolbox_node-5]: process started with pid [1239]
+[INFO] [rviz2-6]: process started with pid [1240]
+[INFO] [cmd_vel_bridge-7]: process started with pid [1241]
+[INFO] [cost_planner-8]: process started with pid [1242]
+[static_transform_publisher-3] [INFO] [1794667601.796435979] [tf_lidar_3d]: Spinning until stopped - publishing transform
+[static_transform_publisher-3] translation: ('0.000000', '0.000000', '0.320000')
+[static_transform_publisher-3] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-3] from 'base_link' to 'lidar_3d_link'
+[static_transform_publisher-4] [INFO] [1794667601.796461023] [tf_lidar_2d]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('0.120000', '0.000000', '0.260000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-4] from 'base_link' to 'link'
+[async_slam_toolbox_node-5] [INFO] [1794667601.804853126] [slam_toolbox]: Node using stack size 40000000
+[parameter_bridge-2] [INFO] [1794667601.844022356] [gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794667601.846079778] [gz_bridge]: Creating GZ->ROS Bridge: [/lidar_3d/points (gz.msgs.PointCloudPacked) -> /lidar_3d/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794667601.849339457] [gz_bridge]: Creating GZ->ROS Bridge: [/world/building/model/x500_lidar_3d_ev_0/link/link/sensor/lidar_2d_v2/scan (gz.msgs.LaserScan) -> /world/building/model/x500_lidar_3d_ev_0/link/link/sensor/lidar_2d_v2/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[async_slam_toolbox_node-5] [INFO] [1794667601.992270722] [slam_toolbox]: Configuring
+[async_slam_toolbox_node-5] [INFO] [1794667602.008617458] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[async_slam_toolbox_node-5] [INFO] [1794667602.008990602] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[INFO] [launch.user]: [LifecycleLaunch] Slamtoolbox node is activating.
+[async_slam_toolbox_node-5] [INFO] [1794667602.033176218] [slam_toolbox]: Activating
+[async_slam_toolbox_node-5] [INFO] [1794667602.093715061] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 26.004 for reason 'discarding message because the queue is full'
+[cmd_vel_bridge-7] [INFO] [1794667602.284739593] [cmd_vel_bridge]: state -> WAIT_PX4
+[cmd_vel_bridge-7] [INFO] [1794667602.285230156] [cmd_vel_bridge]: cmd_vel bridge up: altitude 1.5 m, max 0.6 m/s, auto_takeoff=True. Listening on /fmu/out/vehicle_status_v1, /fmu/out/vehicle_local_position_v1
+[cmd_vel_bridge-7] [INFO] [1794667602.312493242] [cmd_vel_bridge]: Waiting for PX4 data (is MicroXRCEAgent running?)
+[cost_planner-8] [INFO] [1794667602.408089565] [cost_planner]: cost_planner up: action /compute_path_to_pose_cost, costmap /global_costmap/costmap, battery /fmu/out/battery_status_v1
+[rviz2-6] [INFO] [1794667602.653203172] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-6] [INFO] [1794667602.653320748] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-6] [INFO] [1794667602.687545376] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-6] [INFO] [1794667602.757658490] [rviz2]: Subscribing to: /lidar_3d/points
+[rviz2-6] 
+[rviz2-6] [INFO] [1794667602.759701666] [rviz2]: Subscribing to: /map_3d
+[rviz2-6] 
+[rviz2-6] [INFO] [1794667603.189843787] [rviz2]: Message Filter dropping message: frame 'link' at time 26.732 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794667604.603234960] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 28.512 for reason 'discarding message because the queue is full'
+[cmd_vel_bridge-7] [INFO] [1794667605.344337943] [cmd_vel_bridge]: Waiting for PX4 data (is MicroXRCEAgent running?)
+[rviz2-6] [INFO] [1794667605.717228872] [rviz2]: Message Filter dropping message: frame 'link' at time 29.304 for reason 'discarding message because the queue is full'
+[INFO] [laser_odom_to_px4-10]: process started with pid [1410]
+[async_slam_toolbox_node-5] [INFO] [1794667607.151674147] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 31.020 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667607.292561125] [laser_odom_to_px4]: /odom_raw (ENU) -> /fmu/in/vehicle_visual_odometry (NED)
+[rviz2-6] [INFO] [1794667608.277920338] [rviz2]: Message Filter dropping message: frame 'link' at time 31.848 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] Registering sensor: [Custom Described Lidar]
+[cmd_vel_bridge-7] [INFO] [1794667608.379082415] [cmd_vel_bridge]: Waiting for PX4 data (is MicroXRCEAgent running?)
+[rviz2-6] [INFO] [1794667609.051262761] [rviz2]: Trying to create a map of size 226 x 113 using 1 swatches
+[cmd_vel_bridge-7] [INFO] [1794667609.076683729] [cmd_vel_bridge]: state -> ARMING
+[rviz2-6] [ERROR] [1794667609.079169008] [rviz2]: rviz/glsl120/indexed_8bit_image.vert
+[rviz2-6] rviz/glsl120/indexed_8bit_image.frag
+[rviz2-6]  GLSL link result : 
+[rviz2-6] active samplers with a different type refer to the same texture image unit
+[async_slam_toolbox_node-5] [INFO] [1794667609.693781158] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 33.528 for reason 'discarding message because the queue is full'
+[INFO] [controller_server-11]: process started with pid [1485]
+[INFO] [planner_server-12]: process started with pid [1486]
+[INFO] [behavior_server-13]: process started with pid [1487]
+[INFO] [bt_navigator-14]: process started with pid [1488]
+[INFO] [lifecycle_manager-15]: process started with pid [1489]
+[controller_server-11] [INFO] [1794667609.805242193] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-13] [INFO] [1794667609.807386746] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1794667609.819509923] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1794667609.820275414] [controller_server]: Creating controller server
+[bt_navigator-14] [INFO] [1794667609.820288369] [bt_navigator]: Creating
+[planner_server-12] [INFO] [1794667609.821538707] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1794667609.822520371] [planner_server]: Creating
+[controller_server-11] [INFO] [1794667609.826188756] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1794667609.827778927] [local_costmap.local_costmap]: Creating Costmap
+[planner_server-12] [INFO] [1794667609.832718437] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1794667609.833132908] [global_costmap.global_costmap]: Creating Costmap
+[lifecycle_manager-15] [INFO] [1794667609.850913400] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-15] [INFO] [1794667609.855739510] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[cmd_vel_bridge-7] [INFO] [1794667609.990865093] [cmd_vel_bridge]: Requesting offboard + arm
+[cmd_vel_bridge-7] [INFO] [1794667611.015149890] [cmd_vel_bridge]: Requesting offboard + arm
+[cmd_vel_bridge-7] [INFO] [1794667611.063181949] [cmd_vel_bridge]: state -> TAKEOFF
+[laser_odom_to_px4-10] [INFO] [1794667611.162421696] [laser_odom_to_px4]: 11.4 Hz to PX4 | N -0.00 m  E +0.00 m  heading +90.0 deg
+[lifecycle_manager-15] [INFO] [1794667611.274943190] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-15] [INFO] [1794667611.275023896] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-11] [INFO] [1794667611.275430682] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1794667611.275454670] [controller_server]: getting progress checker plugins..
+[controller_server-11] [INFO] [1794667611.275608846] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1794667611.275685861] [controller_server]: Controller frequency set to 10.0000Hz
+[controller_server-11] [INFO] [1794667611.275712463] [local_costmap.local_costmap]: Configuring
+[controller_server-11] [INFO] [1794667611.281388064] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-11] [INFO] [1794667611.288753762] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1794667611.292863165] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1794667611.292900519] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1794667611.293375151] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-11] [INFO] [1794667611.313405095] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1794667611.316165666] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[controller_server-11] [INFO] [1794667611.317636986] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1794667611.322043420] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1794667611.325229748] [controller_server]: Created controller : FollowPath of type nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-11] [INFO] [1794667611.332797480] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-15] [INFO] [1794667611.341489655] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1794667611.341784261] [planner_server]: Configuring
+[planner_server-12] [INFO] [1794667611.341817558] [global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1794667611.353082973] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-12] [INFO] [1794667611.357841722] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-12] [INFO] [1794667611.361052430] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1794667611.361124915] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1794667611.362825513] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1794667611.368524276] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1794667611.368563386] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1794667611.369514366] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1794667611.401012492] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 226 X 113 at 0.050000 m/pix
+[planner_server-12] [INFO] [1794667611.402425267] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+[planner_server-12] [INFO] [1794667611.402458345] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1794667611.403654926] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-15] [INFO] [1794667611.420596685] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1794667611.421052158] [behavior_server]: Configuring
+[behavior_server-13] [INFO] [1794667611.427005662] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors::Spin
+[behavior_server-13] [INFO] [1794667611.429803281] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors::BackUp
+[behavior_server-13] [INFO] [1794667611.432313662] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+[behavior_server-13] [INFO] [1794667611.433601168] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors::Wait
+[behavior_server-13] [INFO] [1794667611.441170286] [behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1794667611.446917059] [behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1794667611.451757451] [behavior_server]: Configuring drive_on_heading
+[behavior_server-13] [INFO] [1794667611.800931639] [behavior_server]: Configuring wait
+[lifecycle_manager-15] [INFO] [1794667611.816005082] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1794667611.816443849] [bt_navigator]: Configuring
+[bt_navigator-14] [INFO] [1794667611.826088595] [bt_navigator]: Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+[bt_navigator-14] [INFO] [1794667611.977710102] [bt_navigator]: Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+[lifecycle_manager-15] [INFO] [1794667612.021524929] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-11] [INFO] [1794667612.021745963] [controller_server]: Activating
+[controller_server-11] [INFO] [1794667612.021770098] [local_costmap.local_costmap]: Activating
+[controller_server-11] [INFO] [1794667612.021775267] [local_costmap.local_costmap]: Checking transform
+[controller_server-11] [INFO] [1794667612.021887464] [local_costmap.local_costmap]: start
+[controller_server-11] [INFO] [1794667612.174101550] [controller_server]: Activating controller: FollowPath of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-11] [INFO] [1794667612.174151239] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[async_slam_toolbox_node-5] [INFO] [1794667612.349201934] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 36.104 for reason 'discarding message because the queue is full'
+[lifecycle_manager-15] [INFO] [1794667612.663104152] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-15] [INFO] [1794667612.663159167] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-12] [INFO] [1794667612.663471762] [planner_server]: Activating
+[planner_server-12] [INFO] [1794667612.663501246] [global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1794667612.663506572] [global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1794667612.663628476] [global_costmap.global_costmap]: start
+[planner_server-12] [INFO] [1794667612.915982642] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1794667612.918441406] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-15] [INFO] [1794667613.024969228] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-15] [INFO] [1794667613.025019330] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-13] [INFO] [1794667613.025393020] [behavior_server]: Activating
+[behavior_server-13] [INFO] [1794667613.025423177] [behavior_server]: Activating spin
+[behavior_server-13] [INFO] [1794667613.025433558] [behavior_server]: Activating backup
+[behavior_server-13] [INFO] [1794667613.025442260] [behavior_server]: Activating drive_on_heading
+[behavior_server-13] [INFO] [1794667613.025448109] [behavior_server]: Activating wait
+[behavior_server-13] [INFO] [1794667613.025458659] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-15] [INFO] [1794667613.132354890] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-15] [INFO] [1794667613.132408567] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1794667613.132844779] [bt_navigator]: Activating
+[bt_navigator-14] [INFO] [1794667613.228174625] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-15] [INFO] [1794667613.335150187] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-15] [INFO] [1794667613.335212368] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-15] [INFO] [1794667613.335219652] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[rviz2-6] [INFO] [1794667614.101989041] [rviz2]: Message Filter dropping message: frame 'link' at time 32.208 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794667614.994257620] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 38.680 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667616.278152790] [laser_odom_to_px4]: 20.4 Hz to PX4 | N -0.00 m  E +0.21 m  heading +91.0 deg
+[async_slam_toolbox_node-5] [INFO] [1794667617.548055574] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 41.188 for reason 'discarding message because the queue is full'
+[rviz2-6] [INFO] [1794667618.462355699] [rviz2]: Message Filter dropping message: frame 'odom' at time 32.276 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-6] [INFO] [1794667618.703018985] [rviz2]: Message Filter dropping message: frame 'link' at time 32.308 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[async_slam_toolbox_node-5] [INFO] [1794667620.149745675] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 43.728 for reason 'discarding message because the queue is full'
+[cmd_vel_bridge-7] [INFO] [1794667620.282717138] [cmd_vel_bridge]: state -> READY
+[cmd_vel_bridge-7] [INFO] [1794667620.283183887] [cmd_vel_bridge]: READY at 1.5 m. Send /cmd_vel, or start exploration.
+[laser_odom_to_px4-10] [INFO] [1794667621.404567025] [laser_odom_to_px4]: 19.4 Hz to PX4 | N +0.01 m  E -0.02 m  heading +91.8 deg
+[async_slam_toolbox_node-5] [INFO] [1794667622.737981042] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 46.236 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794667625.399664106] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 48.808 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667626.572131826] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.01 m  E -0.04 m  heading +92.1 deg
+[async_slam_toolbox_node-5] [INFO] [1794667627.989257426] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 51.316 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794667630.602176611] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 53.860 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667631.695712654] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.01 m  E -0.03 m  heading +92.3 deg
+[async_slam_toolbox_node-5] [INFO] [1794667633.137701421] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 56.368 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794667635.835475930] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 58.940 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667636.876480257] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.01 m  E -0.04 m  heading +92.5 deg
+[async_slam_toolbox_node-5] [INFO] [1794667638.453386708] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 61.448 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794667641.144237695] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 63.988 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667642.141096893] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +0.01 m  E -0.03 m  heading +92.6 deg
+[async_slam_toolbox_node-5] [INFO] [1794667643.834720281] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 66.564 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794667646.486330756] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 69.104 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667647.361037676] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +0.01 m  E -0.04 m  heading +92.6 deg
+[async_slam_toolbox_node-5] [INFO] [1794667649.135573057] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 71.612 for reason 'discarding message because the queue is full'
+[bt_navigator-14] [INFO] [1794667650.315630960] [bt_navigator]: Begin navigating from current location (-0.03, 0.01) to (5.43, 0.02)
+[cost_planner-8] [INFO] [1794667650.334600581] [cost_planner]: NEW GOAL (5.4, 0.0): D=5.5 m  risk=0.00  E=0.55 Wh  K=0.0 rad (0 turns)  J=11.4  battery=96%  1 ms
+[controller_server-11] [INFO] [1794667650.346791273] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [WARN] [1794667650.346852163] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-11] [WARN] [1794667650.346865627] [controller_server]: No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.
+[controller_server-11] [INFO] [1794667650.947058035] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667651.447137863] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667651.803649050] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 74.120 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667651.947025085] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667652.546978180] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667652.634206346] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +0.03 m  E +0.58 m  heading +90.8 deg
+[controller_server-11] [INFO] [1794667653.047053376] [controller_server]: Passing new path to controller.
+[rviz2-6] [INFO] [1794667653.058433068] [rviz2]: Trying to create a map of size 226 x 138 using 1 swatches
+[planner_server-12] [INFO] [1794667653.163833198] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 226 X 138 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667653.547083313] [controller_server]: Passing new path to controller.
+[rviz2-6] [INFO] [1794667654.078583544] [rviz2]: Trying to create a map of size 226 x 152 using 1 swatches
+[controller_server-11] [INFO] [1794667654.147046805] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667654.163862111] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 226 X 152 at 0.050000 m/pix
+[bt_navigator-14] [INFO] [1794667654.316046751] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667654.316474405] [bt_navigator]: Begin navigating from current location (1.28, -0.01) to (7.72, -2.77)
+[async_slam_toolbox_node-5] [INFO] [1794667654.399179964] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 76.660 for reason 'discarding message because the queue is full'
+[cost_planner-8] [INFO] [1794667654.585686002] [cost_planner]: NEW GOAL (7.7, -2.8): D=7.9 m  risk=0.56  E=1.22 Wh  K=4.3 rad (4 turns)  J=28.2  battery=95%  21 ms
+[controller_server-11] [INFO] [1794667654.647001212] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667655.247008841] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667655.747131234] [controller_server]: Passing new path to controller.
+[rviz2-6] [INFO] [1794667656.064910154] [rviz2]: Trying to create a map of size 226 x 171 using 1 swatches
+[planner_server-12] [INFO] [1794667656.164124791] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 226 X 171 at 0.050000 m/pix
+[bt_navigator-14] [INFO] [1794667656.315933117] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667656.316253850] [bt_navigator]: Begin navigating from current location (2.06, -0.02) to (7.92, -3.15)
+[controller_server-11] [INFO] [1794667656.346962694] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667656.847016918] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667657.040160282] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 79.200 for reason 'discarding message because the queue is full'
+[rviz2-6] [INFO] [1794667657.055397775] [rviz2]: Trying to create a map of size 226 x 201 using 1 swatches
+[planner_server-12] [INFO] [1794667657.163918340] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 226 X 201 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667657.447030312] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667657.824186991] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.15 m  E +2.66 m  heading +86.4 deg
+[controller_server-11] [INFO] [1794667657.947086703] [controller_server]: Passing new path to controller.
+[rviz2-6] [INFO] [1794667658.081102415] [rviz2]: Trying to create a map of size 226 x 253 using 1 swatches
+[planner_server-12] [INFO] [1794667658.163877293] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 226 X 253 at 0.050000 m/pix
+[bt_navigator-14] [INFO] [1794667658.376229022] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667658.376561853] [bt_navigator]: Begin navigating from current location (2.86, 0.01) to (7.96, -4.12)
+[cost_planner-8] [INFO] [1794667658.457091646] [cost_planner]: NEW GOAL (8.0, -4.1): D=7.2 m  risk=0.00  E=1.12 Wh  K=4.3 rad (4 turns)  J=22.0  battery=95%  14 ms
+[controller_server-11] [INFO] [1794667658.547029560] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667659.047030066] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667659.647045463] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667659.686892951] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 81.744 for reason 'discarding message because the queue is full'
+[rviz2-6] [INFO] [1794667660.067092517] [rviz2]: Trying to create a map of size 226 x 278 using 1 swatches
+[controller_server-11] [INFO] [1794667660.147018116] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667660.163951726] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 226 X 278 at 0.050000 m/pix
+[bt_navigator-14] [INFO] [1794667660.326149569] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667660.326605998] [bt_navigator]: Begin navigating from current location (3.62, -0.01) to (7.72, -5.15)
+[cost_planner-8] [INFO] [1794667660.635431679] [cost_planner]: NEW GOAL (7.7, -5.2): D=6.9 m  risk=0.00  E=1.09 Wh  K=4.3 rad (4 turns)  J=21.5  battery=95%  9 ms
+[controller_server-11] [INFO] [1794667660.747142129] [controller_server]: Passing new path to controller.
+[rviz2-6] [INFO] [1794667661.054587355] [rviz2]: Trying to create a map of size 239 x 316 using 1 swatches
+[planner_server-12] [INFO] [1794667661.163992764] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 239 X 316 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667661.247176348] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667661.747017955] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667662.326125142] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667662.326395092] [bt_navigator]: Begin navigating from current location (4.20, -0.17) to (6.76, -6.17)
+[controller_server-11] [INFO] [1794667662.347035593] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667662.490358115] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 84.352 for reason 'discarding message because the queue is full'
+[cost_planner-8] [INFO] [1794667662.802759980] [cost_planner]: NEW GOAL (6.8, -6.2): D=6.9 m  risk=0.00  E=0.89 Wh  K=2.2 rad (2 turns)  J=18.0  battery=95%  3 ms
+[controller_server-11] [INFO] [1794667662.847041811] [controller_server]: Passing new path to controller.
+[rviz2-6] [INFO] [1794667663.076820308] [rviz2]: Trying to create a map of size 342 x 316 using 1 swatches
+[laser_odom_to_px4-10] [INFO] [1794667663.128421637] [laser_odom_to_px4]: 21.2 Hz to PX4 | N -0.18 m  E +4.45 m  heading +131.1 deg
+[planner_server-12] [INFO] [1794667663.163983878] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 342 X 316 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667663.446980814] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667663.947037278] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667664.336098996] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667664.336572542] [bt_navigator]: Begin navigating from current location (4.77, -0.68) to (7.87, 5.47)
+[cost_planner-8] [INFO] [1794667664.419200783] [cost_planner]: NEW GOAL (7.9, 5.5): D=7.5 m  risk=0.00  E=1.09 Wh  K=4.0 rad (3 turns)  J=22.1  battery=94%  8 ms
+[controller_server-11] [INFO] [1794667664.447076127] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667665.047027039] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667665.250310425] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 86.924 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667665.547131071] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667666.047060180] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667666.336027760] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667666.336386134] [bt_navigator]: Begin navigating from current location (4.98, -0.91) to (6.95, 6.13)
+[cost_planner-8] [INFO] [1794667666.563875029] [cost_planner]: NEW GOAL (7.0, 6.1): D=7.8 m  risk=0.00  E=1.08 Wh  K=3.3 rad (3 turns)  J=21.8  battery=94%  3 ms
+[controller_server-11] [INFO] [1794667666.647058047] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667667.147067558] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667667.647041718] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667667.952634890] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 89.500 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667668.247055158] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667668.451809212] [laser_odom_to_px4]: 21.2 Hz to PX4 | N -0.54 m  E +5.24 m  heading +44.1 deg
+[controller_server-11] [INFO] [1794667668.747042958] [controller_server]: Passing new path to controller.
+[rviz2-6] [INFO] [1794667669.055753467] [rviz2]: Trying to create a map of size 342 x 317 using 1 swatches
+[planner_server-12] [INFO] [1794667669.163889696] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 342 X 317 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667669.347235513] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667669.847043217] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667670.347060610] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667670.396231261] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667670.396779621] [bt_navigator]: Begin navigating from current location (5.86, -0.36) to (-4.31, 0.22)
+[async_slam_toolbox_node-5] [INFO] [1794667670.693807140] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 92.040 for reason 'discarding message because the queue is full'
+[cost_planner-8] [INFO] [1794667670.849571559] [cost_planner]: NEW GOAL (-4.3, 0.2): D=10.5 m  risk=0.05  E=1.35 Wh  K=3.7 rad (2 turns)  J=28.2  battery=94%  4 ms
+[controller_server-11] [INFO] [1794667670.947102886] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667671.447027937] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667672.046973874] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667672.336042396] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667672.336290912] [bt_navigator]: Begin navigating from current location (6.18, 0.08) to (2.36, -5.47)
+[cost_planner-8] [INFO] [1794667672.498842609] [cost_planner]: NEW GOAL (2.4, -5.5): D=7.2 m  risk=0.00  E=1.21 Wh  K=5.9 rad (4 turns)  J=24.4  battery=94%  11 ms
+[controller_server-11] [INFO] [1794667672.547009993] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667673.147007384] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667673.399935947] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 94.580 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667673.647030895] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667673.778626583] [laser_odom_to_px4]: 21.4 Hz to PX4 | N +0.46 m  E +6.02 m  heading -33.6 deg
+[controller_server-11] [INFO] [1794667674.246980226] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667674.747038038] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667675.347008580] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667675.847090086] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667676.140383787] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 97.156 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667676.347140081] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667676.947058013] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667677.447048271] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667677.947051698] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667678.336196031] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667678.336618179] [bt_navigator]: Begin navigating from current location (5.51, -0.26) to (1.34, -6.25)
+[cost_planner-8] [INFO] [1794667678.467335258] [cost_planner]: NEW GOAL (1.3, -6.3): D=7.7 m  risk=0.00  E=0.97 Wh  K=2.2 rad (2 turns)  J=20.0  battery=93%  4 ms
+[controller_server-11] [INFO] [1794667678.547233281] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667678.838338334] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 99.728 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667679.047006390] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667679.085866258] [laser_odom_to_px4]: 21.0 Hz to PX4 | N -0.29 m  E +5.10 m  heading -144.1 deg
+[controller_server-11] [INFO] [1794667679.647003469] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667680.147566846] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667680.163877251] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 342 X 317 at 0.050000 m/pix
+[bt_navigator-14] [INFO] [1794667680.336276332] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667680.336542606] [bt_navigator]: Begin navigating from current location (4.93, -0.89) to (-6.43, 0.31)
+[cost_planner-8] [INFO] [1794667680.633069841] [cost_planner]: NEW GOAL (-6.4, 0.3): D=11.8 m  risk=0.00  E=1.53 Wh  K=4.0 rad (3 turns)  J=31.8  battery=93%  7 ms
+[controller_server-11] [INFO] [1794667680.647029340] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667681.247042372] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667681.494395484] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 102.236 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667681.747100729] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667682.336008677] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667682.336270306] [bt_navigator]: Begin navigating from current location (4.69, -1.19) to (1.43, -3.68)
+[controller_server-11] [INFO] [1794667682.347031393] [controller_server]: Passing new path to controller.
+[cost_planner-8] [INFO] [1794667682.789683517] [cost_planner]: NEW GOAL (1.4, -3.7): D=4.9 m  risk=0.21  E=1.00 Wh  K=5.4 rad (5 turns)  J=21.4  battery=93%  7 ms
+[controller_server-11] [INFO] [1794667682.847058031] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667683.347023622] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667683.947020540] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667684.141087686] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 104.776 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667684.312199446] [laser_odom_to_px4]: 21.0 Hz to PX4 | N -0.93 m  E +4.59 m  heading -90.8 deg
+[controller_server-11] [INFO] [1794667684.447110680] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667685.047099728] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667685.546979087] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667686.147052473] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667686.647099003] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667686.847131067] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 107.352 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667687.453787248] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667687.953772031] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667688.553755997] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667689.053760169] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667689.553893543] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667689.873959569] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 109.860 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667689.971174922] [laser_odom_to_px4]: 20.8 Hz to PX4 | N -1.66 m  E +4.65 m  heading -173.8 deg
+[planner_server-12] [INFO] [1794667690.070625812] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 342 X 317 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667690.154038264] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667690.653807477] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667690.742704868] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667690.743006098] [bt_navigator]: Begin navigating from current location (4.63, -2.10) to (4.55, 6.24)
+[cost_planner-8] [INFO] [1794667691.199016038] [cost_planner]: NEW GOAL (4.6, 6.2): D=9.5 m  risk=0.00  E=1.64 Wh  K=8.1 rad (6 turns)  J=33.5  battery=92%  37 ms
+[controller_server-11] [INFO] [1794667691.253765853] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667691.853704750] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667692.070652156] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 342 X 317 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667692.353727645] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667692.539983763] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 112.400 for reason 'discarding message because the queue is full'
+[bt_navigator-14] [INFO] [1794667692.792950117] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667692.793299903] [bt_navigator]: Begin navigating from current location (4.53, -2.51) to (4.55, 6.27)
+[controller_server-11] [INFO] [1794667692.953781078] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667693.453811115] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667693.953910662] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667694.553801597] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667695.053748225] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667695.194903793] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 114.940 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667695.195824975] [laser_odom_to_px4]: 20.6 Hz to PX4 | N -2.29 m  E +4.59 m  heading +3.7 deg
+[controller_server-11] [INFO] [1794667695.653765001] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[async_slam_toolbox_node-5] W20261114 14:48:16.189641  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794667696.253701136] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667696.753778183] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667697.070573156] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 342 X 317 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667697.353842379] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667697.853950886] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667697.988928127] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 117.548 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667698.353873490] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667698.792808867] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667698.793247775] [bt_navigator]: Begin navigating from current location (4.97, -1.35) to (4.53, 6.33)
+[controller_server-11] [INFO] [1794667698.953733620] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667699.453747092] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667700.053959612] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667700.553753911] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667700.594962383] [laser_odom_to_px4]: 21.6 Hz to PX4 | N -0.42 m  E +5.33 m  heading +3.7 deg
+[async_slam_toolbox_node-5] [INFO] [1794667700.705031323] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 120.056 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667701.153809872] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667701.653782193] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667702.153952299] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667702.753784020] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667703.253718972] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667703.401808294] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 122.628 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667703.853655048] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667704.353686066] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667704.853654120] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667705.453670550] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667705.874710568] [laser_odom_to_px4]: 21.2 Hz to PX4 | N +1.50 m  E +5.39 m  heading +38.0 deg
+[controller_server-11] [INFO] [1794667705.953755353] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667706.093675206] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 125.140 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667706.453665858] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667707.053652732] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667707.553667184] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667708.053685265] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667708.653726253] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667708.752950642] [bt_navigator]: Received goal preemption request
+[async_slam_toolbox_node-5] [INFO] [1794667708.753049436] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 127.648 for reason 'discarding message because the queue is full'
+[bt_navigator-14] [INFO] [1794667708.753556572] [bt_navigator]: Begin navigating from current location (5.92, 2.03) to (4.48, 6.22)
+[controller_server-11] [INFO] [1794667709.153741691] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667709.653688828] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667710.153774409] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667710.742709444] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667710.742964455] [bt_navigator]: Begin navigating from current location (5.99, 2.77) to (4.33, 6.44)
+[controller_server-11] [INFO] [1794667710.753759636] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667711.182222304] [laser_odom_to_px4]: 21.2 Hz to PX4 | N +3.37 m  E +5.69 m  heading -3.9 deg
+[controller_server-11] [INFO] [1794667711.254050872] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667711.387014817] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 130.156 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667711.853766161] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667712.353738450] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667712.752826270] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667712.753221682] [bt_navigator]: Begin navigating from current location (5.95, 3.57) to (3.63, 6.63)
+[cost_planner-8] [INFO] [1794667712.803833600] [cost_planner]: NEW GOAL (3.6, 6.6): D=4.1 m  risk=0.00  E=0.61 Wh  K=2.2 rad (2 turns)  J=12.8  battery=89%  3 ms
+[controller_server-11] [INFO] [1794667712.853745079] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667713.453803499] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667713.953876304] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667714.040405986] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 132.728 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667714.453762984] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667714.743124828] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667714.743504672] [bt_navigator]: Begin navigating from current location (5.95, 4.31) to (3.00, 6.57)
+[cost_planner-8] [INFO] [1794667714.946225781] [cost_planner]: NEW GOAL (3.0, 6.6): D=4.0 m  risk=0.00  E=0.60 Wh  K=2.2 rad (2 turns)  J=12.6  battery=89%  3 ms
+[controller_server-11] [INFO] [1794667715.053737037] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667715.553807099] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667716.054017423] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667716.398273596] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +5.27 m  E +5.41 m  heading -42.9 deg
+[controller_server-11] [INFO] [1794667716.653666274] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667716.749182990] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 135.268 for reason 'discarding message because the queue is full'
+[bt_navigator-14] [INFO] [1794667716.762819072] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667716.763142894] [bt_navigator]: Begin navigating from current location (5.81, 5.01) to (-2.58, 6.66)
+[cost_planner-8] [INFO] [1794667717.080230005] [cost_planner]: NEW GOAL (-2.6, 6.7): D=9.0 m  risk=0.00  E=1.00 Wh  K=1.1 rad (1 turns)  J=21.9  battery=89%  3 ms
+[controller_server-11] [INFO] [1794667717.153739569] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667717.653639343] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667718.253741149] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667718.753768992] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667718.802760459] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667718.803057664] [bt_navigator]: Begin navigating from current location (5.29, 5.59) to (-5.58, 5.71)
+[cost_planner-8] [INFO] [1794667719.224940842] [cost_planner]: NEW GOAL (-5.6, 5.7): D=10.8 m  risk=0.00  E=1.18 Wh  K=1.1 rad (1 turns)  J=25.9  battery=89%  3 ms
+[controller_server-11] [INFO] [1794667719.253691199] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667719.351430364] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 137.776 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667719.853750928] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667720.353926496] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667720.752943100] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667720.753350169] [bt_navigator]: Begin navigating from current location (4.82, 5.91) to (-5.96, 5.89)
+[controller_server-11] [INFO] [1794667720.953880404] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667721.453789559] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667721.714514017] [laser_odom_to_px4]: 21.4 Hz to PX4 | N +6.24 m  E +3.99 m  heading -90.6 deg
+[controller_server-11] [INFO] [1794667721.953843016] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667722.070697490] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 343 X 317 at 0.050000 m/pix
+[rviz2-6] [INFO] [1794667722.084930777] [rviz2]: Trying to create a map of size 343 x 317 using 1 swatches
+[async_slam_toolbox_node-5] [INFO] [1794667722.200590375] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 140.384 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667722.553910165] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667722.802933572] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667722.803303218] [bt_navigator]: Begin navigating from current location (4.20, 6.07) to (-6.29, 5.96)
+[controller_server-11] [INFO] [1794667723.053829137] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667723.070844986] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 349 X 318 at 0.050000 m/pix
+[rviz2-6] [INFO] [1794667723.103805874] [rviz2]: Trying to create a map of size 349 x 318 using 1 swatches
+[controller_server-11] [INFO] [1794667723.553784328] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667724.153841591] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667724.653821375] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667724.812960330] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667724.813210249] [bt_navigator]: Begin navigating from current location (3.44, 6.05) to (-6.68, 5.83)
+[async_slam_toolbox_node-5] [INFO] [1794667724.891047942] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 142.924 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1794667725.070638309] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 363 X 318 at 0.050000 m/pix
+[rviz2-6] [INFO] [1794667725.088582454] [rviz2]: Trying to create a map of size 363 x 318 using 1 swatches
+[controller_server-11] [INFO] [1794667725.153799748] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667725.753780427] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667726.070571357] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 373 X 318 at 0.050000 m/pix
+[rviz2-6] [INFO] [1794667726.077453412] [rviz2]: Trying to create a map of size 373 x 318 using 1 swatches
+[controller_server-11] [INFO] [1794667726.253899602] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667726.753186124] [bt_navigator]: Received goal preemption request
+[controller_server-11] [INFO] [1794667726.753843939] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667726.753942588] [bt_navigator]: Begin navigating from current location (2.70, 6.08) to (-7.91, 6.45)
+[laser_odom_to_px4-10] [INFO] [1794667726.968613802] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +6.16 m  E +2.00 m  heading -91.6 deg
+[cost_planner-8] [INFO] [1794667727.262616008] [cost_planner]: NEW GOAL (-7.9, 6.4): D=10.5 m  risk=0.00  E=1.15 Wh  K=1.1 rad (1 turns)  J=25.5  battery=88%  3 ms
+[controller_server-11] [INFO] [1794667727.353792786] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667727.502742705] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 145.468 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667727.953758690] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667728.070623142] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 383 X 318 at 0.050000 m/pix
+[rviz2-6] [INFO] [1794667728.094602047] [rviz2]: Trying to create a map of size 383 x 318 using 1 swatches
+[controller_server-11] [INFO] [1794667728.453764279] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667728.802718303] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667728.802971894] [bt_navigator]: Begin navigating from current location (1.92, 6.12) to (-8.43, 6.59)
+[cost_planner-8] [INFO] [1794667728.932716089] [cost_planner]: NEW GOAL (-8.4, 6.6): D=10.5 m  risk=0.00  E=1.15 Wh  K=1.1 rad (1 turns)  J=25.5  battery=88%  4 ms
+[controller_server-11] [INFO] [1794667728.953794941] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667729.070785755] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 396 X 318 at 0.050000 m/pix
+[rviz2-6] [INFO] [1794667729.094736609] [rviz2]: Trying to create a map of size 396 x 318 using 1 swatches
+[controller_server-11] [INFO] [1794667729.553765815] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667730.053838134] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667730.147088669] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 148.008 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667730.553842466] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667730.752758920] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667730.752978842] [bt_navigator]: Begin navigating from current location (1.15, 6.14) to (-8.90, 6.30)
+[cost_planner-8] [INFO] [1794667731.066210563] [cost_planner]: NEW GOAL (-8.9, 6.3): D=10.1 m  risk=0.00  E=1.11 Wh  K=1.1 rad (1 turns)  J=24.6  battery=87%  3 ms
+[planner_server-12] [INFO] [1794667731.070678641] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 396 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667731.153746423] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667731.653731673] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667732.070555503] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 397 X 318 at 0.050000 m/pix
+[rviz2-6] [INFO] [1794667732.100831637] [rviz2]: Trying to create a map of size 397 x 318 using 1 swatches
+[laser_odom_to_px4-10] [INFO] [1794667732.196603892] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +6.13 m  E +0.03 m  heading -94.6 deg
+[controller_server-11] [INFO] [1794667732.253699507] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667732.753883766] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667732.802781778] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667732.803047700] [bt_navigator]: Begin navigating from current location (0.38, 6.15) to (-7.55, 3.84)
+[async_slam_toolbox_node-5] [INFO] [1794667732.840775614] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 150.580 for reason 'discarding message because the queue is full'
+[cost_planner-8] [INFO] [1794667733.216498539] [cost_planner]: NEW GOAL (-7.5, 3.8): D=8.8 m  risk=0.04  E=1.08 Wh  K=2.2 rad (2 turns)  J=23.8  battery=87%  10 ms
+[controller_server-11] [INFO] [1794667733.253725720] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667733.853698384] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667734.070554308] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 397 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667734.353789285] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667734.802841418] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667734.803081477] [bt_navigator]: Begin navigating from current location (-0.39, 6.12) to (-7.53, 3.76)
+[controller_server-11] [INFO] [1794667734.953978076] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667735.447660063] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 153.088 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667735.453808293] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667736.053756208] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667736.553766079] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667736.762828148] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667736.763218582] [bt_navigator]: Begin navigating from current location (-1.15, 6.11) to (-7.89, 3.50)
+[controller_server-11] [INFO] [1794667737.053757074] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667737.363248714] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +5.97 m  E -1.97 m  heading -94.9 deg
+[controller_server-11] [INFO] [1794667737.653807289] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667738.070544834] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 397 X 318 at 0.050000 m/pix
+[async_slam_toolbox_node-5] [INFO] [1794667738.092773071] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 155.664 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667738.153773274] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667738.653772072] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667738.752759239] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667738.753034445] [bt_navigator]: Begin navigating from current location (-1.88, 6.13) to (-7.58, 3.47)
+[controller_server-11] [INFO] [1794667739.153794302] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667739.753784757] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667740.070625085] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 397 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667740.253944581] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667740.744334457] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 158.204 for reason 'discarding message because the queue is full'
+[bt_navigator-14] [INFO] [1794667740.812831032] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667740.813279711] [bt_navigator]: Begin navigating from current location (-2.68, 6.14) to (-7.47, 3.19)
+[controller_server-11] [INFO] [1794667740.853701970] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667741.353788653] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667741.853824038] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667742.453734362] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667742.577415376] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +5.85 m  E -3.95 m  heading -95.3 deg
+[bt_navigator-14] [INFO] [1794667742.753044071] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667742.753378318] [bt_navigator]: Begin navigating from current location (-3.42, 6.13) to (-7.98, 2.71)
+[cost_planner-8] [INFO] [1794667742.880851690] [cost_planner]: NEW GOAL (-8.0, 2.7): D=5.9 m  risk=0.00  E=0.69 Wh  K=1.1 rad (1 turns)  J=15.4  battery=86%  1 ms
+[controller_server-11] [INFO] [1794667742.953909414] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667743.070572744] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 397 X 318 at 0.050000 m/pix
+[async_slam_toolbox_node-5] [INFO] [1794667743.339977372] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 160.712 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667743.453736751] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667744.053738367] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667744.553746649] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667744.802786104] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667744.803184249] [bt_navigator]: Begin navigating from current location (-4.24, 6.11) to (-8.01, 2.26)
+[controller_server-11] [INFO] [1794667745.053717241] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667745.070517595] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 397 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667745.653648321] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667746.004782832] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 163.252 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667746.153740434] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667746.653693353] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667746.812851770] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667746.813360423] [bt_navigator]: Begin navigating from current location (-4.90, 5.98) to (-8.34, -0.37)
+[cost_planner-8] [INFO] [1794667747.169879953] [cost_planner]: NEW GOAL (-8.3, -0.4): D=7.7 m  risk=0.00  E=0.87 Wh  K=1.1 rad (1 turns)  J=19.5  battery=86%  3 ms
+[controller_server-11] [INFO] [1794667747.253740070] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667747.753849033] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667747.782686581] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +5.30 m  E -5.68 m  heading -132.8 deg
+[controller_server-11] [INFO] [1794667748.353750224] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667748.699534314] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 165.828 for reason 'discarding message because the queue is full'
+[bt_navigator-14] [INFO] [1794667748.763029354] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667748.763706755] [bt_navigator]: Begin navigating from current location (-5.45, 5.49) to (-6.97, -3.27)
+[cost_planner-8] [INFO] [1794667748.849179859] [cost_planner]: NEW GOAL (-7.0, -3.3): D=9.8 m  risk=0.25  E=1.39 Wh  K=4.3 rad (4 turns)  J=32.2  battery=86%  44 ms
+[controller_server-11] [INFO] [1794667748.953762454] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667749.453744795] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667750.053814810] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667750.070672983] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 397 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667750.553749477] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667750.802808614] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667750.803328646] [bt_navigator]: Begin navigating from current location (-5.99, 4.90) to (-5.97, -4.45)
+[cost_planner-8] [INFO] [1794667751.066464382] [cost_planner]: NEW GOAL (-6.0, -4.4): D=9.3 m  risk=0.00  E=1.13 Wh  K=2.2 rad (2 turns)  J=25.3  battery=85%  3 ms
+[planner_server-12] [INFO] [1794667751.070556876] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 397 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667751.153746031] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667751.343344329] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 168.368 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667751.653700660] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667752.372377206] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667752.872231298] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667753.181184300] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667753.181479430] [bt_navigator]: Begin navigating from current location (-6.31, 4.55) to (-5.97, -4.91)
+[laser_odom_to_px4-10] [INFO] [1794667753.378196184] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +3.98 m  E -6.73 m  heading -165.4 deg
+[controller_server-11] [INFO] [1794667753.472122363] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667753.972173518] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667754.382662274] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 170.944 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667754.572161107] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667755.072204823] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667755.211132879] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667755.211365130] [bt_navigator]: Begin navigating from current location (-6.45, 4.03) to (-5.84, -5.22)
+[controller_server-11] [INFO] [1794667755.672194279] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667756.172157960] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667756.772175188] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667757.004260319] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 173.452 for reason 'discarding message because the queue is full'
+[bt_navigator-14] [INFO] [1794667757.171176332] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667757.171385628] [bt_navigator]: Begin navigating from current location (-6.47, 3.26) to (-4.42, -5.56)
+[cost_planner-8] [INFO] [1794667757.203528794] [cost_planner]: NEW GOAL (-4.4, -5.6): D=9.7 m  risk=0.00  E=1.26 Wh  K=3.3 rad (3 turns)  J=28.1  battery=85%  18 ms
+[controller_server-11] [INFO] [1794667757.272117298] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667757.772225165] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667758.372185461] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667758.540741885] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +2.11 m  E -6.68 m  heading -179.8 deg
+[controller_server-11] [INFO] [1794667758.872096811] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667759.171139780] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667759.171393537] [bt_navigator]: Begin navigating from current location (-6.47, 2.43) to (-4.11, -5.16)
+[cost_planner-8] [INFO] [1794667759.406395035] [cost_planner]: NEW GOAL (-4.1, -5.2): D=8.5 m  risk=0.00  E=1.15 Wh  K=3.3 rad (3 turns)  J=25.5  battery=84%  12 ms
+[controller_server-11] [INFO] [1794667759.472247367] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667759.608375190] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 175.960 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667759.972229422] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667760.572156355] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667761.072223605] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667761.231147832] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667761.231439422] [bt_navigator]: Begin navigating from current location (-6.52, 1.66) to (-4.00, -5.06)
+[controller_server-11] [INFO] [1794667761.672184143] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667762.172118397] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667762.248071393] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 178.468 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667762.772203663] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667763.221290727] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667763.221767626] [bt_navigator]: Begin navigating from current location (-6.55, 0.90) to (-3.42, -5.50)
+[controller_server-11] [INFO] [1794667763.272265471] [controller_server]: Passing new path to controller.
+[cost_planner-8] [INFO] [1794667763.773262952] [cost_planner]: NEW GOAL (-3.4, -5.5): D=7.5 m  risk=0.00  E=1.05 Wh  K=3.3 rad (3 turns)  J=23.3  battery=84%  8 ms
+[laser_odom_to_px4-10] [INFO] [1794667763.818549911] [laser_odom_to_px4]: 21.2 Hz to PX4 | N +0.09 m  E -6.64 m  heading -177.3 deg
+[controller_server-11] [INFO] [1794667763.872219977] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667764.372276674] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667764.910831332] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 181.040 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667764.972166493] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667765.221270272] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667765.221722187] [bt_navigator]: Begin navigating from current location (-6.58, 0.13) to (-3.00, -5.65)
+[controller_server-11] [INFO] [1794667765.472344348] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667765.972145369] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667766.572114882] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667767.072188367] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667767.181292157] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667767.181740119] [bt_navigator]: Begin navigating from current location (-6.53, -0.60) to (-1.86, -5.16)
+[cost_planner-8] [INFO] [1794667767.524429963] [cost_planner]: NEW GOAL (-1.9, -5.2): D=6.9 m  risk=0.15  E=1.20 Wh  K=5.4 rad (5 turns)  J=27.3  battery=84%  7 ms
+[async_slam_toolbox_node-5] [INFO] [1794667767.558036592] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 183.580 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667767.572172481] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667768.072109322] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667768.672140810] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667768.989993915] [laser_odom_to_px4]: 20.6 Hz to PX4 | N -1.69 m  E -6.18 m  heading +133.6 deg
+[rviz2-6] [INFO] [1794667769.089799615] [rviz2]: Trying to create a map of size 398 x 318 using 1 swatches
+[controller_server-11] [INFO] [1794667769.172249793] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667769.181461442] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667769.181821900] [bt_navigator]: Begin navigating from current location (-6.25, -1.23) to (-8.96, -4.49)
+[planner_server-12] [INFO] [1794667769.238995765] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 398 X 318 at 0.050000 m/pix
+[cost_planner-8] [INFO] [1794667769.687508529] [cost_planner]: NEW GOAL (-9.0, -4.5): D=4.3 m  risk=0.00  E=0.73 Wh  K=3.3 rad (3 turns)  J=16.0  battery=83%  3 ms
+[controller_server-11] [INFO] [1794667769.772107827] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667770.261530727] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 186.156 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667770.272177568] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667770.772080829] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667771.231166963] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667771.231469994] [bt_navigator]: Begin navigating from current location (-5.92, -1.58) to (-1.59, -2.20)
+[planner_server-12] [INFO] [1794667771.238955275] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 398 X 318 at 0.050000 m/pix
+[cost_planner-8] [INFO] [1794667771.294219795] [cost_planner]: NEW GOAL (-1.6, -2.2): D=4.9 m  risk=0.00  E=0.79 Wh  K=3.3 rad (3 turns)  J=17.4  battery=83%  4 ms
+[controller_server-11] [INFO] [1794667771.372182365] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667771.872076268] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667772.472175315] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667772.863343170] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 188.664 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667772.972326292] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667773.472200158] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667774.072075332] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667774.195291018] [laser_odom_to_px4]: 20.8 Hz to PX4 | N -2.67 m  E -5.61 m  heading +142.3 deg
+[controller_server-11] [INFO] [1794667774.572158796] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667775.072140185] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667775.231203203] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667775.231675182] [bt_navigator]: Begin navigating from current location (-5.67, -2.40) to (-7.47, 4.85)
+[async_slam_toolbox_node-5] [INFO] [1794667775.464640091] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 191.172 for reason 'discarding message because the queue is full'
+[cost_planner-8] [INFO] [1794667775.685055752] [cost_planner]: NEW GOAL (-7.5, 4.8): D=7.5 m  risk=0.32  E=1.22 Wh  K=5.1 rad (4 turns)  J=29.6  battery=83%  94 ms
+[controller_server-11] [INFO] [1794667775.772985572] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667776.272128184] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667776.872163169] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667777.181229024] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667777.181752737] [bt_navigator]: Begin navigating from current location (-5.43, -2.55) to (-7.43, 4.83)
+[controller_server-11] [INFO] [1794667777.372236928] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667777.972217509] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667778.059852195] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 193.680 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667778.472073820] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667779.072171267] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667779.369612826] [laser_odom_to_px4]: 20.8 Hz to PX4 | N -2.73 m  E -5.26 m  heading -24.1 deg
+[controller_server-11] [INFO] [1794667779.672178088] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667780.172152750] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667780.709894181] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 196.220 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667780.772162584] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [INFO] [1794667781.181244064] [bt_navigator]: Received goal preemption request
+[bt_navigator-14] [INFO] [1794667781.181579334] [bt_navigator]: Begin navigating from current location (-5.58, -1.81) to (-6.98, 4.61)
+[controller_server-11] [INFO] [1794667781.372121504] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667781.872192695] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667782.239013959] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 398 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667782.372336152] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667782.872211185] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667783.448845535] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 198.828 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667783.472121470] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667783.972170262] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667784.472080149] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667784.611300498] [laser_odom_to_px4]: 20.6 Hz to PX4 | N -1.28 m  E -6.35 m  heading -0.8 deg
+[controller_server-11] [INFO] [1794667785.072368656] [controller_server]: Passing new path to controller.
+[bt_navigator-14] [ERROR] [1794667785.202251407] [bt_navigator_navigate_to_pose_rclcpp_node]: Failed to get result for follow_path in node halt!
+[bt_navigator-14] [INFO] [1794667785.202415042] [bt_navigator]: [navigate_to_pose] [ActionServer] Client requested to cancel the goal. Cancelling.
+[bt_navigator-14] [INFO] [1794667785.202622426] [bt_navigator]: Goal canceled
+[controller_server-11] [INFO] [1794667785.272235149] [controller_server]: Cancellation was successful. Stopping the robot.
+[controller_server-11] [INFO] [1794667785.272281072] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[async_slam_toolbox_node-5] [INFO] [1794667786.054922252] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 201.336 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794667788.800740131] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 203.944 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667789.846458927] [laser_odom_to_px4]: 21.0 Hz to PX4 | N -0.90 m  E -6.39 m  heading -6.1 deg
+[async_slam_toolbox_node-5] [INFO] [1794667791.804887024] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 206.516 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794667794.553565514] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 209.124 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667795.390169058] [laser_odom_to_px4]: 21.0 Hz to PX4 | N -0.82 m  E -6.41 m  heading -6.1 deg
+[async_slam_toolbox_node-5] [INFO] [1794667797.110856615] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 211.632 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794667799.813311488] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 214.204 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667800.569058655] [laser_odom_to_px4]: 20.8 Hz to PX4 | N -0.89 m  E -6.44 m  heading -6.1 deg
+[async_slam_toolbox_node-5] [INFO] [1794667802.465002330] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 216.712 for reason 'discarding message because the queue is full'
+[bt_navigator-14] [INFO] [1794667803.928126891] [bt_navigator]: Begin navigating from current location (-6.39, -0.51) to (-8.50, 6.60)
+[cost_planner-8] [INFO] [1794667803.982632074] [cost_planner]: NEW GOAL (-8.5, 6.6): D=8.7 m  risk=0.00  E=1.06 Wh  K=2.2 rad (2 turns)  J=24.9  battery=80%  37 ms
+[controller_server-11] [INFO] [1794667803.999363480] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [INFO] [1794667804.599590836] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667805.158797430] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 219.256 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667805.199663646] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667805.699653053] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667805.867472513] [laser_odom_to_px4]: 21.2 Hz to PX4 | N -0.48 m  E -6.47 m  heading -8.7 deg
+[async_slam_toolbox_node-5] W20261114 14:50:06.298713  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794667806.299609574] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667806.899529184] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667807.239032878] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 398 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667807.399620356] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667807.796460525] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 221.764 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667807.899518773] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667808.499848038] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667809.099585935] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667809.599597479] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667810.099602682] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667810.500949583] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 224.304 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667810.699618237] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667811.157209231] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +1.63 m  E -6.66 m  heading +0.4 deg
+[controller_server-11] [INFO] [1794667811.199575648] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667811.799605558] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667812.299560191] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667812.799638024] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667813.144968566] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 226.812 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667813.399581438] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667813.899579991] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667814.399569809] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667814.999651793] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667815.499587010] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667815.908500150] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 229.384 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667816.099521114] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667816.504614953] [laser_odom_to_px4]: 21.4 Hz to PX4 | N +3.14 m  E -7.81 m  heading -41.8 deg
+[controller_server-11] [INFO] [1794667816.599599490] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667817.250710467] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667817.849871404] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667818.349875458] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667818.849937941] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667819.086932488] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 231.924 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667819.349861318] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667819.949922690] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667820.449920197] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667820.949983786] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667821.549909339] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667821.706552857] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 234.436 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667822.049950661] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667822.245220477] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +4.34 m  E -9.14 m  heading -7.3 deg
+[controller_server-11] [INFO] [1794667822.549899209] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667823.149927291] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667823.649975611] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667824.149861211] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667824.301989365] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 236.944 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667824.749877585] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667825.249930063] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667825.749910451] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667825.849958674] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1794667825.878945146] [bt_navigator]: Goal succeeded
+[async_slam_toolbox_node-5] [INFO] [1794667826.995904212] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 239.516 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667827.431531567] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +5.98 m  E -9.21 m  heading +18.0 deg
+[bt_navigator-14] [INFO] [1794667828.747895190] [bt_navigator]: Begin navigating from current location (-8.67, 6.42) to (8.50, 6.60)
+[cost_planner-8] [INFO] [1794667828.779013341] [cost_planner]: NEW GOAL (8.5, 6.6): D=20.3 m  risk=0.00  E=2.67 Wh  K=7.3 rad (6 turns)  J=63.5  battery=77%  20 ms
+[controller_server-11] [INFO] [1794667828.798869988] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [INFO] [1794667829.399166311] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667829.656402534] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 242.024 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667829.899088392] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667830.499112676] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667830.999092607] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667831.599086091] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667832.199213012] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667832.296036095] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 244.600 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667832.682659271] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +5.67 m  E -9.23 m  heading +141.1 deg
+[controller_server-11] [INFO] [1794667832.699054430] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667833.299141219] [controller_server]: Passing new path to controller.
+[cost_planner-8] [INFO] [1794667833.742752441] [cost_planner]: route changed (cheaper path found): D=17.1 m  risk=0.00  E=1.96 Wh  K=3.0 rad (2 turns)  J=47.6  battery=77%  4 ms
+[controller_server-11] [INFO] [1794667833.799160067] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667834.299117974] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667834.899144468] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667834.939278433] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 247.140 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667835.399140705] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667835.999125498] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667836.499276010] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667837.099159613] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667837.599167810] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667837.655373214] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 249.748 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667837.863418702] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +5.21 m  E -8.79 m  heading +70.2 deg
+[cost_planner-8] [WARN] [1794667838.142854533] [cost_planner]: REPLAN #1: obstacle on the old path at (-4.6, 6.6) (old J=61.8 incl. collision) -> new path D=24.8 m  risk=0.12  E=3.33 Wh  K=9.5 rad (8 turns)  J=80.6  battery=76%  65 ms
+[controller_server-11] [INFO] [1794667838.199183697] [controller_server]: Passing new path to controller.
+[cost_planner-8] [INFO] [1794667838.828752155] [cost_planner]: route changed (cheaper path found): D=25.3 m  risk=0.14  E=3.33 Wh  K=8.7 rad (8 turns)  J=80.9  battery=76%  141 ms
+[controller_server-11] [INFO] [1794667838.899123567] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] W20261114 14:50:39.147259  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794667839.499132550] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667840.099174267] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667840.189322086] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 398 X 318 at 0.050000 m/pix
+[async_slam_toolbox_node-5] [INFO] [1794667840.312421314] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 252.256 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667840.699173622] [controller_server]: Passing new path to controller.
+[cost_planner-8] [INFO] [1794667841.207567954] [cost_planner]: route changed (cheaper path found): D=16.2 m  risk=0.00  E=1.72 Wh  K=1.1 rad (1 turns)  J=42.3  battery=76%  8 ms
+[controller_server-11] [INFO] [1794667841.299175812] [controller_server]: Passing new path to controller.
+[cost_planner-8] [WARN] [1794667841.819740349] [cost_planner]: REPLAN #2: obstacle on the old path at (-3.4, 6.1) (old J=55.1 incl. collision) -> new path D=24.3 m  risk=0.00  E=3.13 Wh  K=7.6 rad (7 turns)  J=75.3  battery=76%  77 ms
+[controller_server-11] [INFO] [1794667841.899166384] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667842.499215327] [controller_server]: Passing new path to controller.
+[cost_planner-8] [INFO] [1794667842.980856378] [cost_planner]: route changed (cheaper path found): D=15.5 m  risk=0.00  E=1.65 Wh  K=1.1 rad (1 turns)  J=40.7  battery=76%  3 ms
+[controller_server-11] [INFO] [1794667842.999114443] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667843.008035521] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 254.860 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667843.105177346] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +5.83 m  E -7.45 m  heading +106.2 deg
+[cost_planner-8] [WARN] [1794667843.589105385] [cost_planner]: REPLAN #3: obstacle on the old path at (-2.6, 6.3) (old J=53.8 incl. collision) -> new path D=24.1 m  risk=0.00  E=3.00 Wh  K=6.5 rad (6 turns)  J=72.6  battery=76%  75 ms
+[controller_server-11] [INFO] [1794667843.699117239] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667844.299125798] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667844.899143543] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667845.499176478] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667845.703705295] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 257.436 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667846.099153746] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667846.699210556] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667847.299115703] [controller_server]: Passing new path to controller.
+[cost_planner-8] [INFO] [1794667847.845752268] [cost_planner]: route changed (cheaper path found): D=14.8 m  risk=0.00  E=1.68 Wh  K=2.2 rad (2 turns)  J=41.1  battery=75%  5 ms
+[controller_server-11] [INFO] [1794667847.899164442] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667848.333070071] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +5.10 m  E -6.32 m  heading +163.0 deg
+[controller_server-11] [INFO] [1794667848.399195534] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667848.407014515] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 260.008 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667848.999175103] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667849.499208853] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667850.080010843] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667850.579976775] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667851.180009783] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667851.513143070] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 262.516 for reason 'discarding message because the queue is full'
+[cost_planner-8] [INFO] [1794667851.740831683] [cost_planner]: route changed (cheaper path found): D=22.9 m  risk=0.00  E=3.13 Wh  K=9.5 rad (8 turns)  J=75.7  battery=75%  101 ms
+[controller_server-11] [INFO] [1794667851.780003948] [controller_server]: Passing new path to controller.
+[cost_planner-8] [INFO] [1794667852.285079274] [cost_planner]: route changed (cheaper path found): D=14.4 m  risk=0.00  E=1.54 Wh  K=1.1 rad (1 turns)  J=38.2  battery=75%  3 ms
+[controller_server-11] [INFO] [1794667852.380046875] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667852.879973038] [controller_server]: Passing new path to controller.
+[cost_planner-8] [INFO] [1794667853.421141169] [cost_planner]: route changed (cheaper path found): D=22.9 m  risk=0.07  E=3.28 Wh  K=11.3 rad (9 turns)  J=79.7  battery=75%  70 ms
+[controller_server-11] [INFO] [1794667853.479997648] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667854.080113873] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667854.092575487] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +5.04 m  E -5.45 m  heading +70.7 deg
+[async_slam_toolbox_node-5] [INFO] [1794667854.178968951] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 265.024 for reason 'discarding message because the queue is full'
+[cost_planner-8] [INFO] [1794667854.573658606] [cost_planner]: route changed (cheaper path found): D=13.9 m  risk=0.19  E=1.60 Wh  K=2.2 rad (2 turns)  J=40.9  battery=75%  7 ms
+[controller_server-11] [INFO] [1794667854.679973890] [controller_server]: Passing new path to controller.
+[cost_planner-8] [INFO] [1794667855.123731793] [cost_planner]: route changed (cheaper path found): D=16.0 m  risk=0.22  E=2.40 Wh  K=9.2 rad (7 turns)  J=59.5  battery=74%  13 ms
+[controller_server-11] [INFO] [1794667855.179976797] [controller_server]: Passing new path to controller.
+[cost_planner-8] [INFO] [1794667855.682549657] [cost_planner]: route changed (cheaper path found): D=13.5 m  risk=0.21  E=1.47 Wh  K=1.1 rad (1 turns)  J=38.1  battery=74%  3 ms
+[controller_server-11] [INFO] [1794667855.779985208] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667856.280127584] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667856.779216003] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 267.532 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667856.779976815] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] W20261114 14:50:56.872692  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[rviz2-6] [INFO] [1794667857.125334260] [rviz2]: Trying to create a map of size 400 x 318 using 1 swatches
+[planner_server-12] [INFO] [1794667857.170322028] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 400 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667857.380047632] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667857.880069732] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667858.379967494] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667858.980016530] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667859.276320754] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +5.32 m  E -4.60 m  heading +92.5 deg
+[async_slam_toolbox_node-5] [INFO] [1794667859.438142497] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 270.108 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667859.479990450] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667860.079964341] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667860.579972170] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667861.080020203] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667861.679982289] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667862.083957681] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 272.648 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667862.180094407] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667862.780039762] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667863.279999657] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667863.779976634] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667864.380017955] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667864.499584448] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +5.56 m  E -2.29 m  heading +78.4 deg
+[async_slam_toolbox_node-5] [INFO] [1794667864.724469084] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 275.156 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667864.880009872] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667865.379982483] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667865.979968454] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] W20261114 14:51:06.222029  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794667866.479979171] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667867.079990170] [controller_server]: Passing new path to controller.
+[rviz2-6] [INFO] [1794667867.103294496] [rviz2]: Trying to create a map of size 418 x 318 using 1 swatches
+[planner_server-12] [INFO] [1794667867.170162534] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 418 X 318 at 0.050000 m/pix
+[async_slam_toolbox_node-5] [INFO] [1794667867.286735818] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 277.664 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667867.580161468] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667868.079975270] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667868.579994132] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667869.179974368] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667869.647755077] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +5.76 m  E -0.32 m  heading +84.8 deg
+[controller_server-11] [INFO] [1794667869.679969313] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667869.930822994] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 280.204 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667870.179996988] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667870.780001585] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667871.279962890] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667871.879972393] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667872.480086927] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667872.580140263] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 282.748 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667872.980007355] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667873.479992182] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667873.979996998] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667874.579984122] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667874.899939446] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +5.97 m  E +1.66 m  heading +87.1 deg
+[async_slam_toolbox_node-5] W20261114 14:51:15.025133  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794667875.080001842] [controller_server]: Passing new path to controller.
+[rviz2-6] [INFO] [1794667875.109297497] [rviz2]: Trying to create a map of size 411 x 318 using 1 swatches
+[planner_server-12] [INFO] [1794667875.170146592] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 411 X 318 at 0.050000 m/pix
+[async_slam_toolbox_node-5] [INFO] [1794667875.285217710] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 285.288 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667875.680028851] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667876.180030706] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667876.680002225] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667877.279991862] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667877.779984706] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667878.040381029] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 287.860 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667878.279998341] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667878.880024285] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667879.380036796] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667879.879978296] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667880.229104595] [laser_odom_to_px4]: 21.2 Hz to PX4 | N +6.14 m  E +3.63 m  heading +80.6 deg
+[controller_server-11] [INFO] [1794667880.480038868] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667880.682523039] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 290.368 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667880.980115187] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667881.479997482] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667882.080055477] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667882.710259514] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] W20261114 14:51:23.040652  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[planner_server-12] [INFO] [1794667883.100392785] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 411 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667883.310161429] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667883.716660608] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 292.876 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667883.810186291] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667884.310166344] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667884.810292752] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667885.410254825] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667885.906409749] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +6.34 m  E +5.55 m  heading +84.1 deg
+[controller_server-11] [INFO] [1794667885.910277349] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667886.353200161] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 295.384 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667886.510171491] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667887.010240706] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667887.510184003] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667888.110235154] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667888.610330726] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667888.994290399] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 297.924 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667889.110192527] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667889.710167874] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667890.210167034] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667890.710190238] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667891.084747953] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +6.61 m  E +7.60 m  heading +59.4 deg
+[controller_server-11] [INFO] [1794667891.310155205] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667891.601731571] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 300.436 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667891.810177758] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667892.310177209] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667892.910176060] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667893.410161812] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667893.910235934] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667894.201493141] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 302.976 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667894.410196081] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667894.510206678] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1794667894.539382174] [bt_navigator]: Goal succeeded
+[bt_navigator-14] [INFO] [1794667895.931460837] [bt_navigator]: Begin navigating from current location (8.51, 6.49) to (8.00, -0.30)
+[cost_planner-8] [INFO] [1794667895.968460159] [cost_planner]: NEW GOAL (8.0, -0.3): D=7.1 m  risk=0.00  E=1.20 Wh  K=5.9 rad (4 turns)  J=29.9  battery=70%  22 ms
+[controller_server-11] [INFO] [1794667895.992015325] [controller_server]: Received a goal, begin computing control effort.
+[laser_odom_to_px4-10] [INFO] [1794667896.308701695] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +7.71 m  E +8.58 m  heading +24.2 deg
+[controller_server-11] [INFO] [1794667896.592549423] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667896.842493783] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 305.484 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667897.192177100] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667897.692201363] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667898.292191692] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667898.792293003] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667899.292177030] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667899.547549641] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 308.056 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667899.892219307] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667900.392185769] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667900.892174187] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667901.492185694] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667901.526159909] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +7.01 m  E +8.81 m  heading +171.7 deg
+[controller_server-11] [INFO] [1794667901.992218363] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667902.156387486] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 310.564 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667902.492184794] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667903.092264837] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667903.592166073] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667904.092174670] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667904.592173577] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667904.799999271] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 313.072 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667905.192145732] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] W20261114 14:51:45.284911  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794667905.692154494] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667906.192174463] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667906.783583023] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +4.85 m  E +9.07 m  heading +167.9 deg
+[controller_server-11] [INFO] [1794667906.792173303] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667907.292171409] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667907.491201282] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 315.648 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667907.792156026] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667908.392182473] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667908.892193899] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667909.392352461] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667909.992187384] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667910.140722273] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 318.156 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667910.492173577] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667911.092185561] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667911.592170541] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667911.990787423] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +2.92 m  E +9.35 m  heading +169.1 deg
+[controller_server-11] [INFO] [1794667912.092206444] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667912.692175764] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667912.803476904] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 320.728 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667913.192152729] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667913.692180672] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667914.292158385] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667914.792163957] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667915.485850499] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667915.947966514] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 323.236 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667915.985897312] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667916.585863041] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667917.085933647] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667917.585853926] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667917.729559731] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +1.10 m  E +9.15 m  heading -135.7 deg
+[controller_server-11] [INFO] [1794667918.085862899] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667918.535266270] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 325.744 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667918.585970098] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1794667918.611493601] [bt_navigator]: Goal succeeded
+[async_slam_toolbox_node-5] [INFO] [1794667921.227505477] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 328.320 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667922.941349917] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.79 m  E +8.86 m  heading -117.4 deg
+[bt_navigator-14] [INFO] [1794667922.963887154] [bt_navigator]: Begin navigating from current location (8.24, -0.30) to (-8.50, 6.60)
+[cost_planner-8] [INFO] [1794667923.020132560] [cost_planner]: NEW GOAL (-8.5, 6.6): D=21.3 m  risk=0.00  E=2.43 Wh  K=3.3 rad (3 turns)  J=63.4  battery=67%  47 ms
+[controller_server-11] [INFO] [1794667923.034991852] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [INFO] [1794667923.635196196] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667923.888306415] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 330.860 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667924.235187510] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667924.835247025] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667925.335303793] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667925.935238832] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667926.535251821] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667926.584148576] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 333.436 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667927.035269073] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667927.635191622] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] W20261114 14:52:07.675516  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[planner_server-12] [INFO] [1794667928.094057831] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 411 X 318 at 0.050000 m/pix
+[laser_odom_to_px4-10] [INFO] [1794667928.199638850] [laser_odom_to_px4]: 21.2 Hz to PX4 | N +0.55 m  E +7.15 m  heading -95.1 deg
+[controller_server-11] [INFO] [1794667928.235138241] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667928.835152249] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667929.192280660] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 335.944 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667929.335181067] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667929.935136498] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667930.535136543] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667931.135188706] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667931.635302755] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667931.832136723] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 338.452 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667932.235263984] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667932.835139984] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667933.335197543] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667933.372289487] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.27 m  E +5.17 m  heading -99.3 deg
+[controller_server-11] [INFO] [1794667933.935255878] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667934.442391673] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 340.960 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667934.535164201] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667935.035204616] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667935.635299192] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667936.135190020] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667936.735216951] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667937.086587913] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 343.532 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667937.335343523] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667937.935254981] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667938.435193428] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667938.588519967] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.05 m  E +3.17 m  heading -92.0 deg
+[controller_server-11] [INFO] [1794667939.035366228] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667939.535246325] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667939.689261903] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 346.040 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667940.135257558] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667940.735209753] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667941.235199613] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667941.835191280] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667942.329487562] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 348.548 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667942.435353952] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667943.035271467] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667943.635237642] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667943.810479548] [laser_odom_to_px4]: 21.0 Hz to PX4 | N -0.17 m  E +1.19 m  heading -97.0 deg
+[controller_server-11] [INFO] [1794667944.235206074] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667944.735164547] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667945.121853162] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 351.156 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667945.335170053] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667945.935181210] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667946.435406017] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667947.035300911] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667947.535239762] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667948.215553966] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667948.261238950] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 353.728 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667948.715465815] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667949.315456998] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667949.569943443] [laser_odom_to_px4]: 21.0 Hz to PX4 | N -0.37 m  E -0.80 m  heading -96.1 deg
+[controller_server-11] [INFO] [1794667949.815507396] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667950.415526003] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667950.896640351] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 356.236 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667951.015481271] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667951.515521976] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667952.015463151] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667952.615464244] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667953.115651663] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667953.616222702] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 358.812 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] W20261114 14:52:33.659474  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794667953.715591025] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667954.315555372] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667954.815642810] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667954.822087279] [laser_odom_to_px4]: 20.8 Hz to PX4 | N -0.59 m  E -2.77 m  heading -95.3 deg
+[async_slam_toolbox_node-5] W20261114 14:52:35.154939  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794667955.315557323] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667955.915516729] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667956.324624613] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 411 X 318 at 0.050000 m/pix
+[async_slam_toolbox_node-5] [INFO] [1794667956.366105881] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 361.352 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667956.415575520] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667956.915578985] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667957.515620239] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667958.015486927] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667958.615503355] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667959.115500036] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667959.155954726] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 363.924 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667959.615530473] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667960.215879973] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667960.241483044] [laser_odom_to_px4]: 21.8 Hz to PX4 | N +0.12 m  E -4.50 m  heading -50.6 deg
+[controller_server-11] [INFO] [1794667960.715497629] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667961.315483380] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667961.815503802] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667961.919504426] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 366.500 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667962.315623719] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667962.915627481] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667963.415526292] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667964.015525701] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667964.515682669] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667964.615514055] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 369.076 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667965.015546169] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667965.538433580] [laser_odom_to_px4]: 21.2 Hz to PX4 | N +1.38 m  E -6.08 m  heading -47.5 deg
+[controller_server-11] [INFO] [1794667965.615506892] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] W20261114 14:52:45.804126  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794667966.115584624] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667966.324561265] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 411 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667966.715552637] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667967.215454789] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667967.360995550] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 371.680 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667967.815516742] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667968.315684274] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667968.815512174] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667969.415470721] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667969.915445416] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667970.018070968] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 374.188 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667970.515456714] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667970.791456126] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +2.61 m  E -7.66 m  heading -54.4 deg
+[controller_server-11] [INFO] [1794667971.015529291] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667971.515630548] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667972.115456422] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667972.615505005] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667972.703146049] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 376.764 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667973.115774838] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667973.715476321] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667974.215455340] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667974.715450890] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667975.315523959] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667975.408338862] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 379.336 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667975.815645852] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667976.031124940] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +4.26 m  E -8.50 m  heading -10.3 deg
+[controller_server-11] [INFO] [1794667976.315610955] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667976.915463884] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667977.415551371] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] W20261114 14:52:57.709785  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794667977.915507605] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667978.112986582] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 381.912 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667978.515522301] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667979.015601081] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667979.615514807] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667980.115525375] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667980.215598355] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1794667980.245143691] [bt_navigator]: Goal succeeded
+[async_slam_toolbox_node-5] [INFO] [1794667981.279392229] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 384.452 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667981.823419017] [laser_odom_to_px4]: 21.4 Hz to PX4 | N +5.98 m  E -8.62 m  heading +24.2 deg
+[bt_navigator-14] [INFO] [1794667983.702932582] [bt_navigator]: Begin navigating from current location (-8.74, 6.48) to (0.00, 0.00)
+[cost_planner-8] [INFO] [1794667983.778976366] [cost_planner]: NEW GOAL (0.0, 0.0): D=13.6 m  risk=0.00  E=1.85 Wh  K=5.4 rad (5 turns)  J=49.8  battery=61%  68 ms
+[controller_server-11] [INFO] [1794667983.795178868] [controller_server]: Received a goal, begin computing control effort.
+[async_slam_toolbox_node-5] [INFO] [1794667984.083020719] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 387.024 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667984.395496290] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667984.995557872] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667985.595557293] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667986.195490844] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667986.771613374] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 389.600 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667986.796245738] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667987.129606323] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +6.01 m  E -8.09 m  heading +90.9 deg
+[controller_server-11] [INFO] [1794667987.395558425] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667987.895537085] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667988.495607923] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667989.095502450] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667989.488738471] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 392.176 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667989.595492290] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667990.195544789] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667990.795603919] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667991.295568102] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667991.895579339] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667992.089814929] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 394.684 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794667992.356593756] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +5.46 m  E -6.30 m  heading +126.0 deg
+[controller_server-11] [INFO] [1794667992.395546924] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667992.995547358] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667993.495496011] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667994.095556675] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667994.595495276] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667994.831599187] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 397.256 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667995.195501635] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667995.695532750] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667996.195492853] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667996.795577395] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794667997.386954864] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 399.764 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794667997.395556545] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794667997.596226006] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +3.89 m  E -5.33 m  heading -173.9 deg
+[controller_server-11] [INFO] [1794667997.895623724] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] W20261114 14:53:18.136860  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794667998.395497340] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794667998.995571954] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794667999.289056766] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 411 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794667999.495697039] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794668000.039566809] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 402.272 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794668000.095582598] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668000.595554096] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668001.195543057] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668001.695488645] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668002.195506039] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794668002.641503198] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 404.780 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794668002.795588182] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794668002.811294440] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +1.88 m  E -5.25 m  heading +173.2 deg
+[controller_server-11] [INFO] [1794668003.295524597] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668003.895736513] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668004.395483793] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668004.995596640] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794668005.338108672] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 407.356 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] W20261114 14:53:25.373760  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794668005.495476051] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668005.995533388] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668006.595576519] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668007.095519580] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668007.595567815] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794668008.033682701] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 409.928 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668008.056105975] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +0.18 m  E -4.48 m  heading +130.1 deg
+[controller_server-11] [INFO] [1794668008.195624959] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668008.695680953] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668009.195626173] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668009.795498554] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668010.295507632] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794668010.732827077] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 412.500 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794668010.795486402] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668011.395531184] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] W20261114 14:53:31.423195  1344 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.
+[controller_server-11] [INFO] [1794668011.895507905] [controller_server]: Passing new path to controller.
+[planner_server-12] [INFO] [1794668012.289105699] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 411 X 318 at 0.050000 m/pix
+[controller_server-11] [INFO] [1794668012.495505937] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668012.995498110] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668013.689854314] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794668013.790446926] [laser_odom_to_px4]: 20.8 Hz to PX4 | N -0.23 m  E -2.57 m  heading +88.3 deg
+[async_slam_toolbox_node-5] [INFO] [1794668013.888068019] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 415.044 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794668014.189974274] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668014.789797517] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668015.289783495] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668015.789829270] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668016.289815747] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794668016.624580183] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 417.616 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794668016.889890588] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668017.389848026] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668017.889847577] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668018.489799347] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668018.989790824] [controller_server]: Passing new path to controller.
+[laser_odom_to_px4-10] [INFO] [1794668019.095214238] [laser_odom_to_px4]: 21.2 Hz to PX4 | N -0.07 m  E -0.56 m  heading +82.3 deg
+[async_slam_toolbox_node-5] [INFO] [1794668019.332542241] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 420.160 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794668019.489865266] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668020.089881029] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668020.589808270] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668021.089800655] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668021.689814390] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-5] [INFO] [1794668021.979238286] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 422.700 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1794668022.189785563] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1794668022.489901409] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1794668022.517610909] [bt_navigator]: Goal succeeded
+[laser_odom_to_px4-10] [INFO] [1794668024.358956085] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +0.15 m  E +0.84 m  heading +55.7 deg
+[async_slam_toolbox_node-5] [INFO] [1794668024.639570866] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 425.208 for reason 'discarding message because the queue is full'
+[cmd_vel_bridge-7] [INFO] [1794668027.076317404] [cmd_vel_bridge]: state -> LANDING
+[async_slam_toolbox_node-5] [INFO] [1794668027.388936200] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 427.780 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668029.761825623] [laser_odom_to_px4]: 21.6 Hz to PX4 | N +0.14 m  E +0.77 m  heading +56.3 deg
+[async_slam_toolbox_node-5] [INFO] [1794668030.135375630] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 430.288 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668032.834974024] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 432.828 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668035.090742282] [laser_odom_to_px4]: 21.4 Hz to PX4 | N +0.14 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668035.533931703] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 435.340 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668038.172775664] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 437.912 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668040.305141049] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668040.778029055] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 440.420 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668043.386947658] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 442.960 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668045.412841149] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668046.519366849] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 445.500 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668049.112562162] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 448.044 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668051.105101642] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668051.780041307] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 450.616 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668054.515693264] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 453.224 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668056.289068836] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668057.120051659] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 455.732 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668059.718882743] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 458.240 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668061.531729417] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668062.328311236] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 460.748 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668065.026328414] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 463.320 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668066.700639184] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668067.615644810] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 465.828 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668070.215265390] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 468.340 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668071.905522147] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.14 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668072.866829863] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 470.912 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668075.578444303] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 473.488 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668077.092614918] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.14 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668078.223316323] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 476.028 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668081.551357838] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 478.600 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668082.962438090] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.14 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668084.170703989] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 481.144 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668086.810360979] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 483.652 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668088.156588194] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.14 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668089.465036561] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 486.192 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668092.061852858] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 488.700 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668093.378294093] [laser_odom_to_px4]: 21.0 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668094.662046905] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 491.208 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668097.268239865] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 493.716 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668098.567250407] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668099.962194846] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 496.288 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668102.615449415] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 498.864 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668103.756847850] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668105.271328426] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 501.404 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668107.860127099] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 503.912 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668108.968598772] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668110.568486894] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 506.488 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668113.813528132] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 509.092 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668114.693250588] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668116.441538212] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 511.636 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668119.101655569] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 514.208 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668119.886813225] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668121.798353987] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 516.784 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668124.437950388] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 519.292 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668125.099317041] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668126.988106646] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 521.800 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668129.552296790] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 524.304 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668130.223401497] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668132.193640362] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 526.848 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668134.851677174] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 529.388 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668135.415452246] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668137.493832640] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 531.964 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668140.187953657] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 534.568 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668140.572918872] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668142.837955975] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 537.144 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668146.064464510] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 539.684 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668146.329564285] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668148.729998231] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 542.260 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668151.340560274] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 544.800 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668151.493428505] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668153.933071955] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 547.308 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668156.546866989] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 549.816 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668156.683120159] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668159.196438615] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 552.356 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668161.839204405] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 554.928 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668161.861797404] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668164.481889852] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 557.504 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668166.990582113] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668167.050278441] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 560.012 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668169.691599219] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 562.552 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668172.135610604] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668172.251065956] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 565.060 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668174.890522830] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 567.636 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668177.793695661] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668177.986424241] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 570.144 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668180.572695622] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 572.652 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668182.948945977] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668183.235115936] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 575.224 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668185.927826847] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 577.832 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668188.119724939] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.15 m  E +0.76 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668188.540089719] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 580.340 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668191.186069036] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 582.848 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668193.411282803] [laser_odom_to_px4]: 21.2 Hz to PX4 | N +0.15 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668193.846896368] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 585.356 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668196.527966428] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 587.964 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668198.591968950] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.15 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668199.236080534] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 590.536 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668201.891665328] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 593.112 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668203.863876212] [laser_odom_to_px4]: 21.2 Hz to PX4 | N +0.15 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668204.588355980] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 595.652 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668207.289364671] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 598.224 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668209.062812159] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668210.437830228] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 600.736 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668213.126082574] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 603.308 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668214.872627751] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668215.795149631] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 605.848 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668218.437901593] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 608.424 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668219.973400839] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668221.030677157] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 610.964 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668223.629418127] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 613.504 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668225.119173171] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668226.180575310] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 616.012 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668228.832945524] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 618.588 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668230.211110976] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668231.436124567] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 621.128 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668234.044662576] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 623.668 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668235.365523841] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668236.628906282] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 626.208 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668239.280164329] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 628.784 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668240.462165541] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668241.897010126] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 631.324 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668245.123100919] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 633.868 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668246.238917253] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668247.709151010] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 636.408 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668250.317486312] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 638.948 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668251.357882573] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668252.959001171] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 641.488 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668255.598794487] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 644.064 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668256.528725921] [laser_odom_to_px4]: 20.8 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668258.206757828] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 646.604 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668260.759388440] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 649.112 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668261.643441849] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668263.350193582] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 651.620 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668265.963590649] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 654.160 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668266.773432159] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668268.599790650] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 656.736 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668271.165157515] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 659.244 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668271.913998169] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668273.811754721] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 661.816 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668276.991064315] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 664.360 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668277.588248154] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668279.572483852] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 666.900 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668282.190168990] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 669.440 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668282.734615937] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668284.730102628] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 671.948 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668287.382450186] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 674.520 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668287.809989971] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.15 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668289.939428872] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 677.028 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668292.571870269] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 679.604 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668292.930373100] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668295.132139558] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 682.112 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668297.736740563] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 684.652 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668298.035446860] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.15 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668300.381409533] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 687.228 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668302.978978304] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 689.800 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668303.129881682] [laser_odom_to_px4]: 20.4 Hz to PX4 | N +0.15 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668305.574669207] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 692.344 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [INFO] [1794668308.172347465] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 694.852 for reason 'discarding message because the queue is full'
+[laser_odom_to_px4-10] [INFO] [1794668308.274712049] [laser_odom_to_px4]: 20.6 Hz to PX4 | N +0.14 m  E +0.75 m  heading +56.2 deg
+[async_slam_toolbox_node-5] [INFO] [1794668311.419985988] [slam_toolbox]: Message Filter dropping message: frame 'link' at time 697.392 for reason 'discarding message because the queue is full'
