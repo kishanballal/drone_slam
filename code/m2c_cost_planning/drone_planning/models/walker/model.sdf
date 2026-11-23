@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- Person-sized moving obstacle: 0.5 m wide, 2.0 m tall (taller than the 2D LiDAR
+     plane at ~1.76 m, so the drone's /scan sees it). No gravity, so it glides at
+     exactly the speed sent on /model/<name>/cmd_vel by VelocityControl. -->
+<sdf version="1.9">
+  <model name="walker">
+    <pose>0 0 1.0 0 0 0</pose>
+    <link name="body">
+      <gravity>false</gravity>
+      <inertial>
+        <mass>60.0</mass>
+        <inertia><ixx>21.0</ixx><iyy>21.0</iyy><izz>1.9</izz></inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry><cylinder><radius>0.25</radius><length>2.0</length></cylinder></geometry>
+      </collision>
+      <visual name="visual">
+        <geometry><cylinder><radius>0.25</radius><length>2.0</length></cylinder></geometry>
+        <material>
+          <ambient>1.0 0.45 0.0 1</ambient>
+          <diffuse>1.0 0.45 0.0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl"/>
+  </model>
+</sdf>

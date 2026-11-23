@@ -1,0 +1,11 @@
+# rf2o bench test: runs NEXT TO the M1 stack (GPS on) without touching TF.
+/**:   # any node name (rf2o names itself CLaserOdometry2DNode under ros2 run)
+  ros__parameters:
+    laser_scan_topic: /scan
+    odom_topic: /odom_rf2o
+    publish_tf: false          # M1 odom_tf still owns odom -> base_link
+    base_frame_id: base_link
+    odom_frame_id: odom
+    init_pose_from_topic: ""
+    freq: 20.0
+    use_sim_time: true

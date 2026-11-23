@@ -1,0 +1,25 @@
+# Weights of J = w_d*distance + w_r*risk + w_b(battery)*energy + w_k*complexity
+# Change them live:  ros2 param set /cost_planner w_risk 8.0
+cost_planner:
+  ros__parameters:
+    use_sim_time: true
+    w_distance: 1.0          # per metre
+    w_risk: 8.0              # per metre flown at full inflation cost (next to a wall)
+    w_battery: 1.0           # per "free-space metre" of energy (0.1 Wh)
+    w_complexity: 0.6        # per radian of heading change
+    turn_count_cost: 0.3     # extra per turn (rad-equivalent)
+    unknown_risk: 0.35       # risk of unmapped cells (exploration goals are there)
+    battery_gain: 2.0        # energy weight is (1 + 2*(1-soc)) x w_battery
+    hover_power_w: 180.0     # x500 hover power
+    cruise_speed: 0.5        # = RPP desired_linear_vel
+    slow_near_obstacles: 0.5
+    yaw_rate: 0.8
+    brake_time: 1.0
+    epsilon: 1.2             # weighted A*: ~5x faster, at most 20 % above optimal
+    plan_resolution: 0.1
+    goal_tolerance: 0.5
+    clearance_cost: 45       # never fly through cells this close to a wall (~0.7 m); 99 = old behaviour
+    action_name: compute_path_to_pose_cost
+    costmap_topic: /global_costmap/costmap
+    battery_topic: /fmu/out/battery_status_v1
+    robot_frame: base_link

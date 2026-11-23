@@ -1,0 +1,11 @@
+# Loaded AFTER drone_explore/config/nav2_params.yaml (M2b), only changes what M2c needs.
+# The global costmap must refresh faster so moving obstacles show up for replanning.
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      update_frequency: 4.0
+      publish_frequency: 4.0
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      update_frequency: 8.0

@@ -1,0 +1,40 @@
+NEW GOAL (5.4, 0.0): D=5.5 m  risk=0.00  E=0.55 Wh  K=0.0 rad (0 turns)  J=11.4  battery=96%  1 ms
+NEW GOAL (7.7, -2.8): D=7.9 m  risk=0.56  E=1.22 Wh  K=4.3 rad (4 turns)  J=28.2  battery=95%  21 ms
+NEW GOAL (8.0, -4.1): D=7.2 m  risk=0.00  E=1.12 Wh  K=4.3 rad (4 turns)  J=22.0  battery=95%  14 ms
+NEW GOAL (7.7, -5.2): D=6.9 m  risk=0.00  E=1.09 Wh  K=4.3 rad (4 turns)  J=21.5  battery=95%  9 ms
+NEW GOAL (6.8, -6.2): D=6.9 m  risk=0.00  E=0.89 Wh  K=2.2 rad (2 turns)  J=18.0  battery=95%  3 ms
+NEW GOAL (7.9, 5.5): D=7.5 m  risk=0.00  E=1.09 Wh  K=4.0 rad (3 turns)  J=22.1  battery=94%  8 ms
+NEW GOAL (7.0, 6.1): D=7.8 m  risk=0.00  E=1.08 Wh  K=3.3 rad (3 turns)  J=21.8  battery=94%  3 ms
+NEW GOAL (-4.3, 0.2): D=10.5 m  risk=0.05  E=1.35 Wh  K=3.7 rad (2 turns)  J=28.2  battery=94%  4 ms
+NEW GOAL (2.4, -5.5): D=7.2 m  risk=0.00  E=1.21 Wh  K=5.9 rad (4 turns)  J=24.4  battery=94%  11 ms
+NEW GOAL (1.3, -6.3): D=7.7 m  risk=0.00  E=0.97 Wh  K=2.2 rad (2 turns)  J=20.0  battery=93%  4 ms
+NEW GOAL (-6.4, 0.3): D=11.8 m  risk=0.00  E=1.53 Wh  K=4.0 rad (3 turns)  J=31.8  battery=93%  7 ms
+NEW GOAL (1.4, -3.7): D=4.9 m  risk=0.21  E=1.00 Wh  K=5.4 rad (5 turns)  J=21.4  battery=93%  7 ms
+NEW GOAL (4.6, 6.2): D=9.5 m  risk=0.00  E=1.64 Wh  K=8.1 rad (6 turns)  J=33.5  battery=92%  37 ms
+NEW GOAL (3.6, 6.6): D=4.1 m  risk=0.00  E=0.61 Wh  K=2.2 rad (2 turns)  J=12.8  battery=89%  3 ms
+NEW GOAL (3.0, 6.6): D=4.0 m  risk=0.00  E=0.60 Wh  K=2.2 rad (2 turns)  J=12.6  battery=89%  3 ms
+NEW GOAL (-2.6, 6.7): D=9.0 m  risk=0.00  E=1.00 Wh  K=1.1 rad (1 turns)  J=21.9  battery=89%  3 ms
+NEW GOAL (-5.6, 5.7): D=10.8 m  risk=0.00  E=1.18 Wh  K=1.1 rad (1 turns)  J=25.9  battery=89%  3 ms
+NEW GOAL (-7.9, 6.4): D=10.5 m  risk=0.00  E=1.15 Wh  K=1.1 rad (1 turns)  J=25.5  battery=88%  3 ms
+NEW GOAL (-8.4, 6.6): D=10.5 m  risk=0.00  E=1.15 Wh  K=1.1 rad (1 turns)  J=25.5  battery=88%  4 ms
+NEW GOAL (-8.9, 6.3): D=10.1 m  risk=0.00  E=1.11 Wh  K=1.1 rad (1 turns)  J=24.6  battery=87%  3 ms
+NEW GOAL (-7.5, 3.8): D=8.8 m  risk=0.04  E=1.08 Wh  K=2.2 rad (2 turns)  J=23.8  battery=87%  10 ms
+NEW GOAL (-8.0, 2.7): D=5.9 m  risk=0.00  E=0.69 Wh  K=1.1 rad (1 turns)  J=15.4  battery=86%  1 ms
+NEW GOAL (-8.3, -0.4): D=7.7 m  risk=0.00  E=0.87 Wh  K=1.1 rad (1 turns)  J=19.5  battery=86%  3 ms
+NEW GOAL (-7.0, -3.3): D=9.8 m  risk=0.25  E=1.39 Wh  K=4.3 rad (4 turns)  J=32.2  battery=86%  44 ms
+NEW GOAL (-6.0, -4.4): D=9.3 m  risk=0.00  E=1.13 Wh  K=2.2 rad (2 turns)  J=25.3  battery=85%  3 ms
+NEW GOAL (-4.4, -5.6): D=9.7 m  risk=0.00  E=1.26 Wh  K=3.3 rad (3 turns)  J=28.1  battery=85%  18 ms
+NEW GOAL (-4.1, -5.2): D=8.5 m  risk=0.00  E=1.15 Wh  K=3.3 rad (3 turns)  J=25.5  battery=84%  12 ms
+NEW GOAL (-3.4, -5.5): D=7.5 m  risk=0.00  E=1.05 Wh  K=3.3 rad (3 turns)  J=23.3  battery=84%  8 ms
+NEW GOAL (-1.9, -5.2): D=6.9 m  risk=0.15  E=1.20 Wh  K=5.4 rad (5 turns)  J=27.3  battery=84%  7 ms
+NEW GOAL (-9.0, -4.5): D=4.3 m  risk=0.00  E=0.73 Wh  K=3.3 rad (3 turns)  J=16.0  battery=83%  3 ms
+NEW GOAL (-1.6, -2.2): D=4.9 m  risk=0.00  E=0.79 Wh  K=3.3 rad (3 turns)  J=17.4  battery=83%  4 ms
+NEW GOAL (-7.5, 4.8): D=7.5 m  risk=0.32  E=1.22 Wh  K=5.1 rad (4 turns)  J=29.6  battery=83%  94 ms
+NEW GOAL (-8.5, 6.6): D=8.7 m  risk=0.00  E=1.06 Wh  K=2.2 rad (2 turns)  J=24.9  battery=80%  37 ms
+NEW GOAL (8.5, 6.6): D=20.3 m  risk=0.00  E=2.67 Wh  K=7.3 rad (6 turns)  J=63.5  battery=77%  20 ms
+REPLAN #1: obstacle on the old path at (-4.6, 6.6) (old J=61.8 incl. collision) -> new path D=24.8 m  risk=0.12  E=3.33 Wh  K=9.5 rad (8 turns)  J=80.6  battery=76%  65 ms
+REPLAN #2: obstacle on the old path at (-3.4, 6.1) (old J=55.1 incl. collision) -> new path D=24.3 m  risk=0.00  E=3.13 Wh  K=7.6 rad (7 turns)  J=75.3  battery=76%  77 ms
+REPLAN #3: obstacle on the old path at (-2.6, 6.3) (old J=53.8 incl. collision) -> new path D=24.1 m  risk=0.00  E=3.00 Wh  K=6.5 rad (6 turns)  J=72.6  battery=76%  75 ms
+NEW GOAL (8.0, -0.3): D=7.1 m  risk=0.00  E=1.20 Wh  K=5.9 rad (4 turns)  J=29.9  battery=70%  22 ms
+NEW GOAL (-8.5, 6.6): D=21.3 m  risk=0.00  E=2.43 Wh  K=3.3 rad (3 turns)  J=63.4  battery=67%  47 ms
+NEW GOAL (0.0, 0.0): D=13.6 m  risk=0.00  E=1.85 Wh  K=5.4 rad (5 turns)  J=49.8  battery=61%  68 ms

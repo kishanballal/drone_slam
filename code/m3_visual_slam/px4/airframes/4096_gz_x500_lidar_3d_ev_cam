@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# @name Gazebo x500 lidar 3d + small RGB-D camera, GPS-denied
+#
+# @type Quadrotor
+#
+# Exactly airframe 4097 (M2a: GPS off, EKF2 uses rf2o laser odometry),
+# only the Gazebo model adds one low-memory RGB-D camera for visual SLAM.
+
+PX4_SIM_MODEL=${PX4_SIM_MODEL:=x500_lidar_3d_ev_cam}
+
+. ${R}etc/init.d-posix/airframes/4097_gz_x500_lidar_3d_ev
+
+echo "M3v: + 320x240 @ 5 Hz RGB-D camera (rendered only while something subscribes)"

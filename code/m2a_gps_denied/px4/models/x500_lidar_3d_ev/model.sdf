@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Same drone as x500_lidar_3d. This wrapper only exists because PX4 picks
+     the airframe from the model name, and M2a needs its own airframe. -->
+<sdf version="1.9">
+  <model name="x500_lidar_3d_ev">
+    <include merge="true">
+      <uri>x500_lidar_3d</uri>
+    </include>
+  </model>
+</sdf>

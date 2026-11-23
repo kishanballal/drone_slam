@@ -1,0 +1,128 @@
+[INFO] [launch]: All log files can be found below /home/kisha/.ros/log/2026-11-15-03-56-18-710147-HpHyperXomen-2037
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [dynamic_tracker-1]: process started with pid [2043]
+[INFO] [create-2]: process started with pid [2044]
+[INFO] [create-3]: process started with pid [2045]
+[INFO] [parameter_bridge-4]: process started with pid [2046]
+[parameter_bridge-4] [INFO] [1794714978.909476303] [walker_bridge]: Creating ROS->GZ Bridge: [/model/walker_1/cmd_vel (geometry_msgs/msg/Twist) -> /model/walker_1/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1794714979.012309907] [walker_bridge]: Creating ROS->GZ Bridge: [/model/walker_2/cmd_vel (geometry_msgs/msg/Twist) -> /model/walker_2/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[create-2] [INFO] [1794714979.098380209] [ros_gz_sim]: Entity creation successful.
+[create-3] [INFO] [1794714979.198941842] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-2]: process has finished cleanly [pid 2044]
+[dynamic_tracker-1] [INFO] [1794714979.491333117] [dynamic_tracker]: dynamic_tracker up: waiting for /map and /scan
+[INFO] [create-3]: process has finished cleanly [pid 2045]
+[dynamic_tracker-1] [INFO] [1794714980.832614366] [dynamic_tracker]: map frozen (403 x 318); anything not in it is reported as a dynamic obstacle
+[INFO] [obstacle_mover-5]: process started with pid [2133]
+[obstacle_mover-5] [INFO] [1794714983.385201946] [obstacle_mover]: moving: walker_1 6.5 m along x at 0.40 m/s, walker_2 3.5 m along y at 0.30 m/s
+[parameter_bridge-4] [INFO] [1794714986.448652526] [walker_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[dynamic_tracker-1] [WARN] [1794715012.568007595] [dynamic_tracker]: DYNAMIC OBSTACLE #1 detected at (-4.0, 6.1)
+[dynamic_tracker-1] [INFO] [1794715015.754071945] [dynamic_tracker]: DYNAMIC OBSTACLE #1 at (-5.2, 6.0) moving 0.40 m/s
+[dynamic_tracker-1] [INFO] [1794715018.936239442] [dynamic_tracker]: DYNAMIC OBSTACLE #1 at (-6.1, 6.0) moving 0.18 m/s
+[dynamic_tracker-1] [INFO] [1794715020.456783673] [dynamic_tracker]: DYNAMIC OBSTACLE #1 out of sight
+[dynamic_tracker-1] [WARN] [1794715022.603814692] [dynamic_tracker]: DYNAMIC OBSTACLE #2 detected at (-5.7, 6.2)
+[dynamic_tracker-1] [INFO] [1794715025.733077285] [dynamic_tracker]: DYNAMIC OBSTACLE #2 at (-4.5, 6.2) moving 0.37 m/s
+[dynamic_tracker-1] [INFO] [1794715028.927332031] [dynamic_tracker]: DYNAMIC OBSTACLE #2 at (-3.3, 6.2) moving 0.43 m/s
+[dynamic_tracker-1] [INFO] [1794715032.152574887] [dynamic_tracker]: DYNAMIC OBSTACLE #2 at (-2.0, 6.4) moving 1.12 m/s
+[dynamic_tracker-1] [INFO] [1794715035.296532133] [dynamic_tracker]: DYNAMIC OBSTACLE #2 at (-0.9, 6.3) moving 0.55 m/s
+[dynamic_tracker-1] [INFO] [1794715038.388886084] [dynamic_tracker]: DYNAMIC OBSTACLE #2 at (-0.1, 6.2) moving 0.04 m/s
+[dynamic_tracker-1] [INFO] [1794715041.570160433] [dynamic_tracker]: DYNAMIC OBSTACLE #2 at (-1.2, 6.3) moving 0.51 m/s
+[dynamic_tracker-1] [INFO] [1794715044.677942754] [dynamic_tracker]: DYNAMIC OBSTACLE #2 at (-2.5, 6.2) moving 0.27 m/s
+[dynamic_tracker-1] [INFO] [1794715047.814499928] [dynamic_tracker]: DYNAMIC OBSTACLE #2 at (-3.7, 6.2) moving 0.49 m/s
+[dynamic_tracker-1] [INFO] [1794715049.945357841] [dynamic_tracker]: DYNAMIC OBSTACLE #2 out of sight
+[dynamic_tracker-1] [WARN] [1794715054.006989058] [dynamic_tracker]: DYNAMIC OBSTACLE #4 detected at (-6.2, 6.0)
+[dynamic_tracker-1] [INFO] [1794715057.190039330] [dynamic_tracker]: DYNAMIC OBSTACLE #4 at (-6.2, 6.2) moving 0.42 m/s
+[dynamic_tracker-1] [INFO] [1794715060.325403460] [dynamic_tracker]: DYNAMIC OBSTACLE #4 at (-5.0, 6.0) moving 0.24 m/s
+[dynamic_tracker-1] [INFO] [1794715063.490229683] [dynamic_tracker]: DYNAMIC OBSTACLE #4 at (-4.0, 6.1) moving 0.33 m/s
+[dynamic_tracker-1] [INFO] [1794715065.385501079] [dynamic_tracker]: DYNAMIC OBSTACLE #4 out of sight
+[dynamic_tracker-1] [WARN] [1794715065.847525273] [dynamic_tracker]: DYNAMIC OBSTACLE #5 detected at (-3.1, 5.8)
+[dynamic_tracker-1] [INFO] [1794715068.988566113] [dynamic_tracker]: DYNAMIC OBSTACLE #5 at (-1.8, 6.1) moving 0.54 m/s
+[dynamic_tracker-1] [INFO] [1794715072.147289449] [dynamic_tracker]: DYNAMIC OBSTACLE #5 at (-1.1, 6.3) moving 0.78 m/s
+[dynamic_tracker-1] [INFO] [1794715072.480189624] [dynamic_tracker]: DYNAMIC OBSTACLE #5 out of sight
+[dynamic_tracker-1] [WARN] [1794715079.805993178] [dynamic_tracker]: DYNAMIC OBSTACLE #7 detected at (-2.1, 6.1)
+[dynamic_tracker-1] [INFO] [1794715082.946209465] [dynamic_tracker]: DYNAMIC OBSTACLE #7 at (-3.2, 6.0) moving 0.37 m/s
+[dynamic_tracker-1] [INFO] [1794715085.851177735] [dynamic_tracker]: DYNAMIC OBSTACLE #7 out of sight
+[dynamic_tracker-1] [WARN] [1794715092.383459187] [dynamic_tracker]: DYNAMIC OBSTACLE #9 detected at (-6.2, 6.0)
+[dynamic_tracker-1] [INFO] [1794715095.513205201] [dynamic_tracker]: DYNAMIC OBSTACLE #9 at (-5.3, 6.0) moving 0.19 m/s
+[dynamic_tracker-1] [INFO] [1794715098.679726900] [dynamic_tracker]: DYNAMIC OBSTACLE #9 at (-4.2, 6.0) moving 0.34 m/s
+[dynamic_tracker-1] [INFO] [1794715101.874638300] [dynamic_tracker]: DYNAMIC OBSTACLE #9 at (-3.0, 6.2) moving 0.37 m/s
+[dynamic_tracker-1] [INFO] [1794715105.083261443] [dynamic_tracker]: DYNAMIC OBSTACLE #9 at (-1.8, 6.0) moving 1.98 m/s
+[dynamic_tracker-1] [INFO] [1794715108.384293656] [dynamic_tracker]: DYNAMIC OBSTACLE #9 at (-0.8, 6.3) moving 0.89 m/s
+[dynamic_tracker-1] [INFO] [1794715109.754262799] [dynamic_tracker]: DYNAMIC OBSTACLE #9 out of sight
+[dynamic_tracker-1] [WARN] [1794715139.581814072] [dynamic_tracker]: DYNAMIC OBSTACLE #11 detected at (8.7, 2.9)
+[dynamic_tracker-1] [INFO] [1794715142.725323872] [dynamic_tracker]: DYNAMIC OBSTACLE #11 out of sight
+[dynamic_tracker-1] [WARN] [1794715147.456406709] [dynamic_tracker]: DYNAMIC OBSTACLE #13 detected at (8.6, 3.4)
+[dynamic_tracker-1] [INFO] [1794715150.645841418] [dynamic_tracker]: DYNAMIC OBSTACLE #13 at (8.6, 4.2) moving 0.35 m/s
+[dynamic_tracker-1] [INFO] [1794715153.805462372] [dynamic_tracker]: DYNAMIC OBSTACLE #13 at (8.7, 5.1) moving 0.22 m/s
+[dynamic_tracker-1] [INFO] [1794715156.909687690] [dynamic_tracker]: DYNAMIC OBSTACLE #13 at (8.7, 5.7) moving 0.20 m/s
+[dynamic_tracker-1] [INFO] [1794715160.074017652] [dynamic_tracker]: DYNAMIC OBSTACLE #13 at (8.6, 5.0) moving 0.24 m/s
+[dynamic_tracker-1] [INFO] [1794715163.253024630] [dynamic_tracker]: DYNAMIC OBSTACLE #13 at (8.8, 4.3) moving 1.31 m/s
+[dynamic_tracker-1] [INFO] [1794715164.330000180] [dynamic_tracker]: DYNAMIC OBSTACLE #13 out of sight
+[dynamic_tracker-1] [WARN] [1794715168.247571778] [dynamic_tracker]: DYNAMIC OBSTACLE #15 detected at (8.4, 2.6)
+[dynamic_tracker-1] [WARN] [1794715168.556059220] [dynamic_tracker]: DYNAMIC OBSTACLE #14 detected at (9.4, -0.6)
+[dynamic_tracker-1] [INFO] [1794715170.211322572] [dynamic_tracker]: DYNAMIC OBSTACLE #14 out of sight
+[dynamic_tracker-1] [INFO] [1794715171.500998014] [dynamic_tracker]: DYNAMIC OBSTACLE #15 at (8.7, 2.7) moving 0.83 m/s
+[dynamic_tracker-1] [INFO] [1794715174.628753507] [dynamic_tracker]: DYNAMIC OBSTACLE #15 at (8.6, 3.6) moving 0.25 m/s
+[dynamic_tracker-1] [INFO] [1794715177.742761775] [dynamic_tracker]: DYNAMIC OBSTACLE #15 at (8.6, 4.4) moving 0.30 m/s
+[dynamic_tracker-1] [INFO] [1794715180.912980759] [dynamic_tracker]: DYNAMIC OBSTACLE #15 at (8.7, 5.1) moving 0.29 m/s
+[dynamic_tracker-1] [INFO] [1794715184.144305932] [dynamic_tracker]: DYNAMIC OBSTACLE #15 at (8.7, 5.5) moving 0.21 m/s
+[dynamic_tracker-1] [INFO] [1794715187.285306674] [dynamic_tracker]: DYNAMIC OBSTACLE #15 at (8.6, 5.1) moving 0.43 m/s
+[dynamic_tracker-1] [INFO] [1794715187.542884502] [dynamic_tracker]: DYNAMIC OBSTACLE #15 out of sight
+[dynamic_tracker-1] [WARN] [1794715188.057254552] [dynamic_tracker]: DYNAMIC OBSTACLE #17 detected at (8.8, 4.3)
+[dynamic_tracker-1] [INFO] [1794715191.158570440] [dynamic_tracker]: DYNAMIC OBSTACLE #17 at (8.7, 3.5) moving 0.28 m/s
+[dynamic_tracker-1] [INFO] [1794715194.348334420] [dynamic_tracker]: DYNAMIC OBSTACLE #17 at (8.6, 2.6) moving 0.68 m/s
+[dynamic_tracker-1] [INFO] [1794715196.218412524] [dynamic_tracker]: DYNAMIC OBSTACLE #17 out of sight
+[dynamic_tracker-1] [WARN] [1794715197.009679062] [dynamic_tracker]: DYNAMIC OBSTACLE #19 detected at (8.5, 2.3)
+[dynamic_tracker-1] [INFO] [1794715200.210158897] [dynamic_tracker]: DYNAMIC OBSTACLE #19 at (8.8, 3.0) moving 0.37 m/s
+[dynamic_tracker-1] [INFO] [1794715202.766977640] [dynamic_tracker]: DYNAMIC OBSTACLE #19 out of sight
+[dynamic_tracker-1] [WARN] [1794715203.328319540] [dynamic_tracker]: DYNAMIC OBSTACLE #20 detected at (8.6, 4.1)
+[dynamic_tracker-1] [INFO] [1794715206.501268585] [dynamic_tracker]: DYNAMIC OBSTACLE #20 at (8.6, 4.9) moving 0.79 m/s
+[dynamic_tracker-1] [INFO] [1794715209.645494911] [dynamic_tracker]: DYNAMIC OBSTACLE #20 at (8.7, 5.5) moving 0.31 m/s
+[dynamic_tracker-1] [INFO] [1794715210.354540080] [dynamic_tracker]: DYNAMIC OBSTACLE #20 out of sight
+[dynamic_tracker-1] [WARN] [1794715232.665124265] [dynamic_tracker]: DYNAMIC OBSTACLE #21 detected at (-4.8, 6.0)
+[dynamic_tracker-1] [INFO] [1794715235.828543691] [dynamic_tracker]: DYNAMIC OBSTACLE #21 at (-6.0, 6.0) moving 0.34 m/s
+[dynamic_tracker-1] [INFO] [1794715239.035109593] [dynamic_tracker]: DYNAMIC OBSTACLE #21 at (-6.1, 6.0) moving 0.18 m/s
+[dynamic_tracker-1] [INFO] [1794715242.245904990] [dynamic_tracker]: DYNAMIC OBSTACLE #21 at (-4.9, 6.0) moving 1.03 m/s
+[dynamic_tracker-1] [INFO] [1794715245.466735959] [dynamic_tracker]: DYNAMIC OBSTACLE #21 at (-3.8, 6.2) moving 0.76 m/s
+[dynamic_tracker-1] [INFO] [1794715247.711660220] [dynamic_tracker]: DYNAMIC OBSTACLE #21 out of sight
+[dynamic_tracker-1] [WARN] [1794715248.300259886] [dynamic_tracker]: DYNAMIC OBSTACLE #22 detected at (-2.7, 6.1)
+[dynamic_tracker-1] [INFO] [1794715251.488478747] [dynamic_tracker]: DYNAMIC OBSTACLE #22 at (-1.5, 6.3) moving 0.58 m/s
+[dynamic_tracker-1] [INFO] [1794715254.744423546] [dynamic_tracker]: DYNAMIC OBSTACLE #22 at (-0.7, 6.4) moving 0.91 m/s
+[dynamic_tracker-1] [INFO] [1794715255.544244842] [dynamic_tracker]: DYNAMIC OBSTACLE #22 out of sight
+[dynamic_tracker-1] [WARN] [1794715256.931461896] [dynamic_tracker]: DYNAMIC OBSTACLE #23 detected at (-0.2, 6.2)
+[dynamic_tracker-1] [INFO] [1794715260.155550953] [dynamic_tracker]: DYNAMIC OBSTACLE #23 at (-1.5, 6.2) moving 0.65 m/s
+[dynamic_tracker-1] [INFO] [1794715263.354040187] [dynamic_tracker]: DYNAMIC OBSTACLE #23 at (-2.6, 6.3) moving 1.10 m/s
+[dynamic_tracker-1] [INFO] [1794715266.544433450] [dynamic_tracker]: DYNAMIC OBSTACLE #23 at (-3.7, 6.0) moving 0.35 m/s
+[dynamic_tracker-1] [INFO] [1794715268.376478250] [dynamic_tracker]: DYNAMIC OBSTACLE #23 out of sight
+[dynamic_tracker-1] [WARN] [1794715276.675279917] [dynamic_tracker]: DYNAMIC OBSTACLE #24 detected at (-5.5, 6.0)
+[dynamic_tracker-1] [INFO] [1794715279.844229625] [dynamic_tracker]: DYNAMIC OBSTACLE #24 at (-4.9, 6.1) moving 0.58 m/s
+[dynamic_tracker-1] [INFO] [1794715280.503912837] [dynamic_tracker]: DYNAMIC OBSTACLE #24 out of sight
+[obstacle_mover-5] Traceback (most recent call last):
+[obstacle_mover-5]   File "/home/kisha/slam_drone/build/drone_planning/drone_planning/obstacle_mover.py", line 126, in main
+[obstacle_mover-5]     rclpy.spin(node)
+[obstacle_mover-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 247, in spin
+[obstacle_mover-5]     executor.spin_once()
+[obstacle_mover-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 926, in spin_once
+[obstacle_mover-5]     self._spin_once_impl(timeout_sec)
+[obstacle_mover-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 907, in _spin_once_impl
+[obstacle_mover-5]     handler, entity, node = self.wait_for_ready_callbacks(
+[obstacle_mover-5]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[obstacle_mover-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 877, in wait_for_ready_callbacks
+[obstacle_mover-5]     return next(self._cb_iter)
+[obstacle_mover-5]            ^^^^^^^^^^^^^^^^^^^
+[obstacle_mover-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 785, in _wait_for_ready_callbacks
+[obstacle_mover-5]     raise ExternalShutdownException()
+[obstacle_mover-5] rclpy.executors.ExternalShutdownException
+[obstacle_mover-5] 
+[obstacle_mover-5] During handling of the above exception, another exception occurred:
+[obstacle_mover-5] 
+[obstacle_mover-5] Traceback (most recent call last):
+[obstacle_mover-5]   File "/home/kisha/slam_drone/install/drone_planning/lib/drone_planning/obstacle_mover", line 33, in <module>
+[obstacle_mover-5]     sys.exit(load_entry_point('drone-planning', 'console_scripts', 'obstacle_mover')())
+[obstacle_mover-5]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[obstacle_mover-5]   File "/home/kisha/slam_drone/build/drone_planning/drone_planning/obstacle_mover.py", line 131, in main
+[obstacle_mover-5]     w['pub'].publish(Twist())
+[obstacle_mover-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/publisher.py", line 70, in publish
+[obstacle_mover-5]     self.__publisher.publish(msg)
+[obstacle_mover-5] rclpy._rclpy_pybind11.RCLError: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:423
+[INFO] [dynamic_tracker-1]: process has finished cleanly [pid 2043]
+[ERROR] [obstacle_mover-5]: process has died [pid 2133, exit code 1, cmd '/home/kisha/slam_drone/install/drone_planning/lib/drone_planning/obstacle_mover --ros-args -r __node:=obstacle_mover --params-file /home/kisha/slam_drone/install/drone_planning/share/drone_planning/config/obstacles.yaml --params-file /tmp/launch_params_us5br2sz'].
