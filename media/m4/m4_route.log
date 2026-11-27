@@ -1,0 +1,14 @@
+[INFO] [launch]: All log files can be found below /home/kisha/.ros/log/2026-11-27-13-38-32-687033-HpHyperXomen-1683
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [search_route-1]: process started with pid [1772]
+[search_route-1] [INFO] [1795786713.372980844] [search_route]: search_route ready: recording the flight path, waiting for /search_route/start
+[search_route-1] [INFO] [1795786864.221561326] [search_route]: SEARCH ROUTE PLAN: map split into 3 areas, 91% of the floor already seen while exploring, 2 stops cover 94% of the rest, route 35.3 m (planned in 1.8 s) | old fixed 9-stop tour from here: 59.9 m -> 41% shorter
+[search_route-1] [INFO] [1795786864.222111032] [search_route]:   stop 1: (-5.1, -5.4) in area 1
+[search_route-1] [INFO] [1795786864.222444632] [search_route]:   stop 2: (4.9, -5.4) in area 2
+[search_route-1] [INFO] [1795786864.235952849] [search_route]: == stop 1/2 (area 1): (-5.1, -5.4) ==
+[search_route-1] [INFO] [1795786885.171418066] [search_route]: STOP stop 1/2 (area 1): SUCCEEDED
+[search_route-1] [INFO] [1795786887.942385188] [search_route]: == stop 2/2 (area 2): (4.9, -5.4) ==
+[search_route-1] [INFO] [1795786944.920120438] [search_route]: STOP stop 2/2 (area 2): SUCCEEDED
+[search_route-1] [INFO] [1795786947.946099486] [search_route]: == home: (0.1, -0.0) ==
+[search_route-1] [INFO] [1795786977.349116167] [search_route]: STOP home: SUCCEEDED
+[search_route-1] [INFO] [1795786980.286510285] [search_route]: SEARCH ROUTE DONE: 2/2 stops reached, home reached, flew 34.3 m in 116 s

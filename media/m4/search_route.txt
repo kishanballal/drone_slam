@@ -1,0 +1,7 @@
+start (-6.13, 0.35)
+areas 3: area 1 59 m2, area 2 58 m2, area 3 145 m2
+seen while exploring 91%
+stop 1: (-5.13, -5.44) area 1
+stop 2: (4.87, -5.44) area 2
+route length 35.3 m | old fixed 9-stop tour from here: 59.9 m -> 41% shorter
+SEARCH ROUTE DONE: 2/2 stops reached, home reached, flew 34.3 m in 116 s

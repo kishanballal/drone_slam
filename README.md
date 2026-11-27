@@ -16,6 +16,7 @@ Stack: Ubuntu 24.04 (WSL2) · ROS 2 Jazzy · Gazebo Harmonic · PX4 v1.17 SITL �
 | M2c | Cost-based planner (distance + collision risk + battery + path complexity), moving people, live re-planning | `code/m2c_cost_planning` | `code/m2c_cost_planning/demo/run_m2c_demo.bat` |
 | M3v | Camera visual SLAM (RTAB-Map RGB-D) with a memory guard | `code/m3_visual_slam` | `code/m3_visual_slam/demo/run_m3v_demo.bat` |
 | M3 | Search and rescue: explore, build a 3D LiDAR map, detect victims (lying / sitting), drop pins on the map | `code/m3_victims` | `code/m3_victims/demo/run_m3_demo.bat gui` |
+| M4 | The drone plans its own search route from its map: splits it into rooms, picks the fewest stops that see the unseen floor, visits each once in the shortest order (TSP) | `code/m4_search_route` | `code/m4_search_route/demo/run_m4_demo.bat gui` |
 
 ## M3 result (final run, Nov 23, 2026)
 4 victims hidden in the building (2 lying, 2 sitting). GPS off, no prior map.
@@ -34,6 +35,21 @@ How it works: the 3D LiDAR cloud is placed in the SLAM map using x/y/yaw from sl
 from PX4, each scan is snapped so the floor is at z = 0, points go into a 0.1 m voxel map, and low person-sized
 clusters away from walls are classified as lying or sitting (furniture is rejected by its flat top).
 A victim is only pinned after it is seen in 4 map updates in a row.
+
+## M4 result (Nov 27, 2026): self-planned search route
+Same building, drone and victims as M3, GPS off. The 9 hand-written M3 tour stops are replaced by a route the
+drone plans itself from the map it built (see `code/m4_search_route/README.md`).
+
+| | M4 |
+|---|---|
+| Areas found in the map | 3 (two rooms + corridor loop) |
+| Floor already seen while exploring | 91% |
+| Search stops chosen | 2 (one per room the corridor flight could not see into) |
+| Route length | 35.3 m, vs 59.9 m for the old 9-stop tour from the same start (41% shorter) |
+| Mission time | exploration 126 s + search route 124 s = 250 s |
+| Victims | all 4 found, 0.05-0.18 m error, no false pins |
+
+Files: `media/m4/` (route plan, victims.csv, 2D + 3D maps, logs, video frames).
 
 ## Videos
 Demo videos are larger than GitHub's 100 MB limit, so they are attached to the GitHub Releases of this repo.

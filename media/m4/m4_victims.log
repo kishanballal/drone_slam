@@ -1,0 +1,48 @@
+[INFO] [launch]: All log files can be found below /home/kisha/.ros/log/2026-11-27-13-38-49-307306-HpHyperXomen-1863
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [height_map_node-1]: process started with pid [1868]
+[INFO] [victim_detector_node-2]: process started with pid [1869]
+[victim_detector_node-2] [INFO] [1795786729.848758569] [victim_detector]: Victim detector running (waiting for /map_3d)
+[height_map_node-1] [INFO] [1795786729.950100416] [height_map_3d]: 3D map: listening on /lidar_3d/points, map frame 'map'
+[height_map_node-1] [INFO] [1795786730.621395764] [height_map_3d]: 3D map: 0 voxels shown, 0 scans used, 0 TF misses, floor fix +0.00 m
+[height_map_node-1] [WARN] [1795786731.043086883] [height_map_3d]: waiting for PX4 odometry on /fmu/out/vehicle_odometry
+[height_map_node-1] [WARN] [1795786732.060787889] [height_map_3d]: TF map <- lidar_3d_link not available: Could not find a connection between 'map' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[height_map_node-1] [INFO] [1795786741.149009502] [height_map_3d]: 3D map: 7987 voxels shown, 11 scans used, 3 TF misses, floor fix +0.28 m
+[height_map_node-1] [INFO] [1795786752.935904554] [height_map_3d]: 3D map: 15697 voxels shown, 28 scans used, 3 TF misses, floor fix -0.33 m
+[height_map_node-1] [INFO] [1795786763.344505968] [height_map_3d]: 3D map: 28691 voxels shown, 44 scans used, 3 TF misses, floor fix -0.34 m
+[victim_detector_node-2] [WARN] [1795786763.349708740] [victim_detector]: VICTIM 1 FOUND (lying) at x=2.99 y=-4.48, 0.02 m from nearest true victim
+[height_map_node-1] [INFO] [1795786773.876219806] [height_map_3d]: 3D map: 33968 voxels shown, 59 scans used, 3 TF misses, floor fix -0.34 m
+[victim_detector_node-2] [WARN] [1795786780.096185090] [victim_detector]: VICTIM 2 FOUND (lying) at x=8.52 y=5.11, 0.40 m from nearest true victim
+[height_map_node-1] [INFO] [1795786785.640206575] [height_map_3d]: 3D map: 41357 voxels shown, 73 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795786796.022470874] [height_map_3d]: 3D map: 49374 voxels shown, 88 scans used, 3 TF misses, floor fix -0.33 m
+[victim_detector_node-2] [WARN] [1795786802.223620413] [victim_detector]: VICTIM 3 FOUND (sitting) at x=-2.86 y=6.54, 0.15 m from nearest true victim
+[height_map_node-1] [INFO] [1795786806.421905770] [height_map_3d]: 3D map: 52024 voxels shown, 100 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795786818.257654060] [height_map_3d]: 3D map: 57520 voxels shown, 116 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795786828.710726558] [height_map_3d]: 3D map: 63600 voxels shown, 132 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795786839.059337795] [height_map_3d]: 3D map: 71794 voxels shown, 148 scans used, 3 TF misses, floor fix +0.34 m
+[victim_detector_node-2] [WARN] [1795786841.136405652] [victim_detector]: VICTIM 4 FOUND (sitting) at x=-8.09 y=-6.35, 0.18 m from nearest true victim
+[height_map_node-1] [INFO] [1795786849.366281963] [height_map_3d]: 3D map: 80931 voxels shown, 163 scans used, 3 TF misses, floor fix +0.06 m
+[height_map_node-1] [INFO] [1795786860.969057699] [height_map_3d]: 3D map: 83446 voxels shown, 179 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795786871.185089090] [height_map_3d]: 3D map: 87061 voxels shown, 196 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795786881.428296433] [height_map_3d]: 3D map: 89288 voxels shown, 214 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795786893.141926294] [height_map_3d]: 3D map: 92328 voxels shown, 228 scans used, 3 TF misses, floor fix +0.33 m
+[height_map_node-1] [INFO] [1795786903.447193435] [height_map_3d]: 3D map: 93889 voxels shown, 244 scans used, 3 TF misses, floor fix -0.33 m
+[height_map_node-1] [INFO] [1795786913.766118438] [height_map_3d]: 3D map: 94395 voxels shown, 262 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795786925.451332096] [height_map_3d]: 3D map: 94459 voxels shown, 277 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795786935.689493034] [height_map_3d]: 3D map: 96441 voxels shown, 294 scans used, 3 TF misses, floor fix +0.33 m
+[height_map_node-1] [INFO] [1795786945.924384575] [height_map_3d]: 3D map: 103389 voxels shown, 312 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795786957.500101148] [height_map_3d]: 3D map: 107842 voxels shown, 329 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795786967.723667448] [height_map_3d]: 3D map: 109347 voxels shown, 345 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795786978.194534801] [height_map_3d]: 3D map: 109815 voxels shown, 360 scans used, 3 TF misses, floor fix -0.32 m
+[height_map_node-1] [INFO] [1795786989.947050104] [height_map_3d]: 3D map: 109882 voxels shown, 373 scans used, 3 TF misses, floor fix -0.33 m
+[height_map_node-1] [INFO] [1795786991.304494888] [height_map_3d]: saved 156843 points to /home/kisha/slam_drone/maps/map3d_20261127_134310.ply
+[height_map_node-1] [INFO] [1795787000.193227912] [height_map_3d]: 3D map: 109896 voxels shown, 388 scans used, 3 TF misses, floor fix -0.33 m
+[height_map_node-1] [INFO] [1795787010.437001952] [height_map_3d]: 3D map: 109901 voxels shown, 406 scans used, 3 TF misses, floor fix +0.17 m
+[height_map_node-1] [INFO] [1795787021.963035751] [height_map_3d]: 3D map: 109902 voxels shown, 424 scans used, 3 TF misses, floor fix +0.19 m
+[height_map_node-1] [INFO] [1795787032.121745952] [height_map_3d]: 3D map: 109902 voxels shown, 442 scans used, 3 TF misses, floor fix +0.19 m
+[height_map_node-1] [INFO] [1795787042.139765342] [height_map_3d]: 3D map: 109902 voxels shown, 461 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795787053.567174395] [height_map_3d]: 3D map: 109903 voxels shown, 479 scans used, 3 TF misses, floor fix +0.19 m
+[height_map_node-1] [INFO] [1795787063.630186585] [height_map_3d]: 3D map: 109903 voxels shown, 497 scans used, 3 TF misses, floor fix +0.20 m
+[height_map_node-1] [INFO] [1795787073.711669203] [height_map_3d]: 3D map: 109903 voxels shown, 514 scans used, 3 TF misses, floor fix +0.17 m
+[height_map_node-1] [INFO] [1795787083.733118949] [height_map_3d]: 3D map: 109903 voxels shown, 530 scans used, 3 TF misses, floor fix -0.34 m
+[height_map_node-1] [INFO] [1795787095.154953291] [height_map_3d]: 3D map: 109903 voxels shown, 546 scans used, 3 TF misses, floor fix -0.34 m

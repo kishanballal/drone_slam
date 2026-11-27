@@ -1,0 +1,3 @@
+exploration: 126 s
+search route: 124 s
+total mission: 250 s

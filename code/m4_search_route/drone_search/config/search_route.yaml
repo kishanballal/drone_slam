@@ -1,0 +1,23 @@
+# M4 search route. Lists of numbers MUST be written with decimals (1.0, not 1).
+search_route:
+  ros__parameters:
+    use_sim_time: true
+    map_topic: /map
+    map_frame: map
+    base_frame: base_link
+    plan_cell: 0.2          # m, planning grid (slam map is 0.05 m)
+    see_radius: 5.0         # m, how far the 3D LiDAR reliably sees a victim (map max_range is 7 m)
+    stop_clearance: 0.8     # m, stops at least this far from walls (Nav2 inflation is 0.7 m)
+    travel_clearance: 0.5   # m, corridor width used for the distance estimates
+    door_split: 1.0         # m, shrink free space by this much to cut rooms apart at doorways (doors are 1.8 m)
+    cover_goal: 0.95        # stop adding stops once 95% of the unseen floor is covered
+    min_gain_m2: 1.0        # a stop must add at least 1 m2 of new floor
+    max_stops: 12
+    home_xy: [0.0, 0.0]
+    goal_timeout: 120.0
+    pause_at_stop: 2.0      # s hover at each stop so the victim detector gets a few looks
+    record_period: 1.0
+    record_spacing: 0.5
+    # The old hand-written M3 tour (x, y pairs), only used to print the before/after distance.
+    fixed_tour_xy: [-6.0, -4.5, -2.5, -5.0, -8.5, 2.0, -5.0, 6.0, 1.5, 6.0, 6.5, 5.5, 6.0, -4.0, 1.5, -3.0, 0.0, 0.0]
+    out_dir: /home/kisha/slam_drone/maps
